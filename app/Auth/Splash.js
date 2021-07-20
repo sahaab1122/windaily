@@ -15,7 +15,7 @@ class Splash extends Component {
   }
   componentDidMount = async () => {
     setTimeout(() => {
-        this.props.navigation.navigate('Login');
+        this.props.navigation.navigate('Home');
     }, 2000);
   };
 
@@ -27,7 +27,7 @@ class Splash extends Component {
           <Image
             source={require('../Assets/windaily.png')}
             resizeMode="contain"
-            style={{height: totalSize(50), width: totalSize(50)}}
+            style={{height: totalSize(35), width: totalSize(25)}}
           />
         </View>
         <View style={{position: 'absolute', bottom: height(5)}}>
