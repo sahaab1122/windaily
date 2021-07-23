@@ -35,10 +35,11 @@ class Home extends React.Component {
         return (
 
             <Wrapper>
-                <Text>
-                    hello
-                </Text>
-                <AntDesign  name="home" size={30} />
+                 
+                <TouchableOpacity style={{position:"absolute",top:10,right:10}}>
+
+                <AntDesign  name="setting" size={30} />
+                </TouchableOpacity>
 
             </Wrapper>
 

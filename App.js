@@ -5,7 +5,7 @@ import { createStackNavigator, TransitionPresets } from '@react-navigation/stack
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Splash from './app/Auth/Splash';
 import Login from './app/Auth/Login'
-
+import AntDesign from 'react-native-vector-icons/AntDesign'
 import {
 
   About,
@@ -97,8 +97,7 @@ MyTabBar = ({ state, descriptors, navigation }) => {
 
                        {
                             route.name == 'Home' &&
-                            <Image resizeMode='contain' source={isFocused ? tabIcon1Active : tabIcon1} style={{width:25,height:25}} />
-                        } 
+                              <AntDesign  name="home" size={30} />  } 
                          
                         {/* {
                             route.name == 'About' &&
