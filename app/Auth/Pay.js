@@ -59,17 +59,19 @@ class Pay extends React.Component {
     render() {
         return (
 
-            <View style={{ height: '100%',paddingTop:20,backgroundColor:"blue" }}>
+            <View style={{ height: '100%',paddingTop:20,backgroundColor:"#04a4df" }}>
                  <Image source={require('../Assets/windaily.png')} style={{width:"80%",height:"20%", alignSelf:"center",marginVertical:20}} />
 
 
-                <ScrollView contentContainerStyle={{ minHeight: Dimensions.get('window').height, justifyContent: 'space-evenly' }} showsVerticalScrollIndicator={false} >
+                
          
                     <View style={{ width: '100%',height:"90%",justifyContent:'space-evenly' }} >
+                            <TouchableOpacity>
 
                         <Text style={{alignItems: 'center',alignSelf: 'center',justifyContent: 'center',alignSelf: 'center',marginTop: 10,fontSize:30,color:"#fff",textDecorationLine:"underline"}} >
                            SECURE PAYMENT PAGE
                         </Text>
+                            </TouchableOpacity>
                     
                          
 
@@ -81,7 +83,7 @@ class Pay extends React.Component {
                         </View>
 
                     </View>
-                </ScrollView>
+              
             </View>
 
         )

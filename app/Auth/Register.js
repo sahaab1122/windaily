@@ -2,10 +2,10 @@
 import React from 'react';
 
 import { ImageBackground, uri, StyleSheet, TextInput, View, TouchableOpacity, Text, Image, SafeAreaView, KeyboardAvoidingView, Dimensions, Platform, ScrollView } from 'react-native';
+import api from '../api/api';
+import path from '../api/path';
 
  
-// import api from '../api/api';
-// import path from '../api/path';
 
 class Register extends React.Component {
 
@@ -23,7 +23,7 @@ class Register extends React.Component {
 
         }
     }
-    addToReduc = async () => {
+    Register = async () => {
 
         if (this.state.name == '') {
             alert('Please write Name')
@@ -95,7 +95,7 @@ class Register extends React.Component {
     render() {
         return (
 
-            <View style={{ height: '100%',paddingTop:20,backgroundColor:"blue" }}>
+            <View style={{ height: '100%',paddingTop:20,backgroundColor:"#04a4df" }}>
                  <Image source={require('../Assets/windaily.png')} style={{width:"80%",height:"20%", alignSelf:"center",marginVertical:20}} />
 
 
@@ -104,29 +104,29 @@ class Register extends React.Component {
                     <View style={{ width: '100%',height:"90%" }} >
                         {/* <TouchableWithoutFeedback onPress={keyboard.dismiss}/> */}
                         {/* <Inputfield text="First Name" /> */}
-                        <TextInput style={styles.inputfield} placeholder="Name" placeholderTextColor="grey"
-                            onChangeText={(Fname) => { this.setState({ name }) }}
+                        <TextInput style={styles.inputfield} placeholder="Name" placeholderTextColor="grey" color="#000"
+                            onChangeText={(name) => { this.setState({ name }) }}
                         />
                        
                         {/* <Inputfield  text="Phone or Mail" /> */}
-                        <TextInput keyboardType={'email-address'} style={styles.inputfield} placeholder="Phone no" placeholderTextColor="grey"
+                        <TextInput keyboardType={'email-address'} style={styles.inputfield} placeholder="Phone no"  color="#000" placeholderTextColor="grey"
                             onChangeText={(phone) => { this.setState({ phone }) }}
                         />
                         {/* <Inputfield text="Email" keyboardType="email-address" /> */}
-                        <TextInput keyboardType={'email-address'} style={styles.inputfield} placeholder="Email" placeholderTextColor="grey"
+                        <TextInput keyboardType={'email-address'} style={styles.inputfield} placeholder="Email"  color="#000" placeholderTextColor="grey"
                             onChangeText={(email) => { this.setState({ email }) }}
                         />
 
                         
-                        <TextInput style={styles.inputfield} placeholder="Password" placeholderTextColor="grey" secureTextEntry={true}
+                        <TextInput style={styles.inputfield} placeholder="Password" placeholderTextColor="grey"  color="#000" secureTextEntry={true}
                             onChangeText={(password) => { this.setState({ password }) }}
                         />
                         
-                        <TextInput style={styles.inputfield} placeholder="Confirm Password" placeholderTextColor="grey" secureTextEntry={true}
+                        <TextInput style={styles.inputfield} placeholder="Confirm Password" placeholderTextColor="grey"  color="#000" secureTextEntry={true}
                             onChangeText={(Cpassword) => { this.setState({ Cpassword }) }}
                         />
 
-                         <TouchableOpacity onPress={() => this.addToReduc()} style={styles.text} >
+                         <TouchableOpacity onPress={() => this.Register()} style={styles.text} >
                             <Text style={{ color: 'white',textDecorationLine:"underline",fontSize:30 }}>Sign up</Text>
                         </TouchableOpacity>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>

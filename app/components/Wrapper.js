@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { View, KeyboardAvoidingView, Keyboard, TouchableWithoutFeedback, Image,Platform, ScrollView, ImageBackground } from 'react-native'
+import { View, KeyboardAvoidingView, Keyboard, TouchableWithoutFeedback, Image, Platform, ScrollView, ImageBackground, TouchableOpacity } from 'react-native'
+import LinearGradient from 'react-native-linear-gradient';
 import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsive-screen';
- 
+import AntDesign from 'react-native-vector-icons/AntDesign'
 
- 
+
 
 class Wrapper extends Component {
     constructor(props) {
@@ -14,16 +15,23 @@ class Wrapper extends Component {
         return (
             <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={{ flex: 1, }} >
                 {/* <ImageBackground source={require('../assets/backWhite.png')} resizeMode='stretch' style={{ width: '100%', height: heightPercentageToDP('100%'), position: 'absolute' }} /> */}
-                    
-                <View style={{ flex: 1, }}>
-                    <Image source={require('../Assets/windaily.png')} style={{width:"90%",height:"25%",alignSelf:"center"}} />
+
+                <LinearGradient colors={['#04a4df',  '#fff']} style={{ flex: 1,width:"100%" }}>
+                    <View style={{width:"90%",height:200,justifyContent:"center",alignSelf:"center"}}>
+
+
+                    <Image source={require('../Assets/windailys.png')} style={{ width: "100%",height:200, alignSelf: "center" }} />
+                    </View>
                     {
                         this.props.children
                     }
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Setting')} style={{ position: "absolute", top: 10, right: 10 }}>
+
+                        <AntDesign name="setting" size={30} color={"#fff"} />
+                    </TouchableOpacity>
 
 
-
-                </View>
+                </LinearGradient>
             </KeyboardAvoidingView >
         )
     }

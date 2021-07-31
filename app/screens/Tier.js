@@ -3,20 +3,20 @@ import React from 'react';
 
 import { ImageBackground, uri, StyleSheet, TextInput, View, TouchableOpacity, Text, Image, SafeAreaView, KeyboardAvoidingView, Dimensions, Platform, ScrollView } from 'react-native';
 
- 
+
 // import api from '../api/api';
 // import path from '../api/path';
 
 class Tier extends React.Component {
 
-  
+
     constructor() {
         super();
         this.state = {
             Fname: '',
             Lname: '',
             email: '',
-            city:'',
+            city: '',
             password: '',
             Cpassword: '',
             phone: '',
@@ -29,11 +29,11 @@ class Tier extends React.Component {
             alert('Please write Name')
         }
 
-       
+
         else if (this.state.email == '') {
             alert('Please write Email  ')
         }
-       
+
         else if (this.state.password == '') {
             alert('Please write PASSWORD  ')
         }
@@ -46,10 +46,10 @@ class Tier extends React.Component {
         else {
             let param = {
                 "name": this.state.name,
-              
+
                 "phone": this.state.phone,
                 "email": this.state.email,
-             
+
                 "password": this.state.password,
             }
             let response = await api(path.register, "POST", param)
@@ -71,10 +71,10 @@ class Tier extends React.Component {
         // this.props.setLoading(true)
         let user = {
             firstName: this.state.name.trim(),
-       
+
             phone: this.state.phone.trim(),
             email: this.state.email.trim(),
-              
+
             password: this.state.password,
             Cpassword: this.state.Cpassword,
 
@@ -88,47 +88,50 @@ class Tier extends React.Component {
 
 
         // }
-        
+
     }
-  
+
 
     render() {
         return (
 
-            <View style={{ height: '100%',paddingTop:20,backgroundColor:"blue" }}>
-                 <Image source={require('../Assets/windaily.png')} style={{width:"80%",height:"20%", alignSelf:"center",marginVertical:20}} />
+            <View style={{ height: '100%', paddingTop: 20, backgroundColor: "#04a4df" }}>
+                <View style={{ width: "90%", height: 200, justifyContent: "center", alignSelf: "center" }}>
 
+
+                    <Image source={require('../Assets/windailys.png')} style={{ width: "100%", height: 200, alignSelf: "center" }} />
+                </View>
 
                 <ScrollView contentContainerStyle={{ minHeight: Dimensions.get('window').height, justifyContent: 'space-evenly' }} showsVerticalScrollIndicator={false} >
-         
-                    <View style={{ width: '100%',height:"90%" }} >
 
-                        <Text style={{alignItems: 'center',alignSelf: 'flex-end',justifyContent: 'center',alignSelf: 'center',marginTop: 10,height: 43,fontSize:30,color:"#fff",textDecorationLine:"underline"}} >
+                    <View style={{ width: '100%', height: "90%" }} >
+
+                        <Text style={{ alignItems: 'center', alignSelf: 'flex-end', justifyContent: 'center', alignSelf: 'center', marginTop: 10, height: 43, fontSize: 30, color: "#fff", textDecorationLine: "underline" }} >
                             TIER SELECTION
                         </Text>
-                    <TouchableOpacity onPress={() => this.addToReduc()} style={styles.text1} >
-                            <Text style={{ color: '#000', }}>Free</Text>
-                        </TouchableOpacity>
-                       
-                        <TouchableOpacity onPress={() => this.addToReduc()} style={styles.text1} >
-                            <Text style={{ color: '#000', }}>Bronze</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity onPress={() => this.addToReduc()} style={styles.text1} >
-                            <Text style={{ color: '#000', }}>Silver</Text>
+                        <TouchableOpacity  style={styles.text1} >
+                            <Text style={{ color: '#000', fontSize: 20 }}>FREE</Text>
                         </TouchableOpacity>
 
-                        
                         <TouchableOpacity onPress={() => this.addToReduc()} style={styles.text1} >
-                            <Text style={{ color: '#000', }}>Gold</Text>
+                            <Text style={{ color: '#000', fontSize: 20 }}>BRONZE</Text>
                         </TouchableOpacity>
-                        
-                         
+                        <TouchableOpacity onPress={() => this.addToReduc()} style={styles.text1} >
+                            <Text style={{ color: '#000', fontSize: 20 }}>SILVER</Text>
+                        </TouchableOpacity>
 
-                         <TouchableOpacity onPress={() => this.props.navigation.navigate('Home')} style={styles.text} >
-                            <Text style={{ color: 'white',textDecorationLine:"underline",fontSize:30 }}>Next</Text>
+
+                        <TouchableOpacity onPress={() => this.addToReduc()} style={styles.text1} >
+                            <Text style={{ color: '#000', fontSize: 20 }}>GOLD</Text>
+                        </TouchableOpacity>
+
+
+
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('Home')} style={styles.text} >
+                            <Text style={{ color: 'white', textDecorationLine: "underline", fontSize: 30 }}>Next</Text>
                         </TouchableOpacity>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
-                          
+
                         </View>
 
                     </View>
@@ -148,10 +151,10 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 10,
         height: 43,
-        
-        
-        
-     
+
+
+
+
     },
     text1: {
         alignItems: 'center',
@@ -163,9 +166,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         borderRadius: 3,
         width: "90%"
-        
-        
-     
+
+
+
     },
     inputfield: {
         width: '90%',
@@ -181,7 +184,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         alignItems: 'flex-start',
         paddingHorizontal: 10,
-    
+
 
     },
 
