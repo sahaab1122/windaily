@@ -7,5 +7,6 @@ export default {
     register: BASE_URL + 'register',
     prizesadd: BASE_URL +'prizes/add',
     getprizes: BASE_URL + 'prizes',
-    
+    gettier: BASE_URL + 'tier',
+    ticket: BASE_URL + 'ticket'
 }

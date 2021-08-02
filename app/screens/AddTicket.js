@@ -18,6 +18,8 @@ import { Carousal } from '../components/Carousel';
 import { connect } from 'react-redux';
 import { set_ticket } from '../store/actions/appAction';
 import LinearGradient from 'react-native-linear-gradient';
+import path from '../api/path';
+import api from '../api/api';
 // import { code } from 'statuses';
 
 
@@ -36,12 +38,22 @@ class AddTicket extends React.Component {
 
 
     sentCode = async() => {
+        let param = {
+            "ticket": this.state.code,
+            "user": this.props.user._id
+        }
+        let response = await api(path.ticket, "POST", param)
+
         await this.props.setTicket(this.state.code)
         this.props.navigation.navigate('Ticket')
+        // alert(response.message)
+        console.log(response.message)
+        alert(response.message)
     }
+    
 
 
-
+   
 
 
 
@@ -121,7 +133,7 @@ const mapState = state => {
         tick: state.appReducer.tickets,
         // loading: state.globalReducer.loading,
         // token: state.authReducer.token,
-        // user: state.authReducer.user,
+        user: state.authReducer.user,
     }
 }
 const mapDispatch = dispatch => {

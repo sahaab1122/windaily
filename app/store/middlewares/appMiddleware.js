@@ -1,7 +1,7 @@
 import api from '../../api/api';
 import path from '../../api/path';
 // import { setError, setLoading } from '../actions/globalActions'
-import { set_items,set_prizes,  set_featured, set_user,set_categories, set_ticket,  } from '../actions/appAction'
+import { set_items,set_prizes,  set_featured, set_user,set_categories, set_ticket, set_tier,  } from '../actions/appAction'
 
 
 export const _getItems = () => {
@@ -26,14 +26,14 @@ export const _getPrizes = () => {
         }
     }
 } 
-export const _getCategories = () => {
+export const _getTier = () => {
 
     return async (dispatch, getState) => {
 
 
-        let res = await api(path.getcategories, "GET",);
+        let res = await api(path.gettier, "GET",);
         if (res) {
-            dispatch(set_categories(res.result))
+            dispatch(set_tier(res.result))
         }
     }
 } 

@@ -56,8 +56,7 @@ class AppNavigator extends React.Component {
         return (
           <Stack.Navigator headerMode="none" //initialRouteName={'Welcome'} 
             screenOptions={{ gestureEnabled: true, gestureDirection: 'horizontal', animationEnabled: Platform.OS === 'ios' ? true : false }}
-          >
-            <Stack.Screen name='Tier' component={Tier} />
+          > 
             <Stack.Screen name='Home' component={Home} />
             {/* <Stack.Screen name='About' component={About} /> */}
             <Stack.Screen name='Setting' component={Setting} />
@@ -193,6 +192,7 @@ class AppNavigator extends React.Component {
 const mapState = state => {
     return {
         logged: state.authReducer.logged,
+        
     }
 }
 

@@ -1,36 +1,36 @@
 import React, { Profiler } from 'react';
 import { createStackNavigator, TransitionPresets, TransitionSpecs } from '@react-navigation/stack';
-   
- import AppNavigator from './AppNavigator';
+
+import AppNavigator from './AppNavigator';
 //  import firebase from 'firebase';
- 
- 
+
+
 
 import { ActivityIndicator, Text, View } from 'react-native';
-  
+
 import { PersistGate } from 'redux-persist/integration/react';
 import Store from './app/store/Store';
 import { Provider } from 'react-redux';
 
- 
 
- 
+
+
 const Stack = createStackNavigator();
 
 class App extends React.Component {
 
-  
+
 
   render() {
     return (
-       
+
       <PersistGate loading={false} persistor={Store.persistor}>
-      <Provider store={Store.store}>
-         <AppNavigator />
-       </Provider>
-       </PersistGate>
-        
-      
+        <Provider store={Store.store}>
+          <AppNavigator />
+        </Provider>
+      </PersistGate>
+
+
 
     );
   }
@@ -51,4 +51,4 @@ export default App
   // // Initialize Firebase
   // if(!firebase.apps.length)
   // firebase.initializeApp(firebaseConfig);
- 
+

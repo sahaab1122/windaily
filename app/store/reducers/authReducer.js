@@ -5,7 +5,7 @@ import { LOGIN, UPDATE ,LOGOUT} from '../actions/types';
 
 
 const initialState = {
-    logged: false, user: {},
+    logged: false, user: {},tier:false
 }
 
 const authReducer = (state = initialState, action) => {

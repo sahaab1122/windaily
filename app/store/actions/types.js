@@ -6,7 +6,7 @@ export const DELETE = 'DELETE';
 
 export const SET_USERS = 'SET_USERS';
 export const SET_PRIZES = 'SET_PRIZES';
-export const SET_CATEGORIES = 'SET_CATEGORIES';
+export const SET_TIER = 'SET_TIER';
 export const SET_TICKET = 'SET_TICKET'
 
 export const ADD_TO_CART = "ADD_TO_CART";

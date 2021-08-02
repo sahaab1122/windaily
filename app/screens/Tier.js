@@ -2,6 +2,8 @@
 import React from 'react';
 
 import { ImageBackground, uri, StyleSheet, TextInput, View, TouchableOpacity, Text, Image, SafeAreaView, KeyboardAvoidingView, Dimensions, Platform, ScrollView } from 'react-native';
+import { connect } from 'react-redux';
+import { set_tier } from '../store/actions/appAction';
 
 
 // import api from '../api/api';
@@ -13,84 +15,26 @@ class Tier extends React.Component {
     constructor() {
         super();
         this.state = {
-            Fname: '',
-            Lname: '',
-            email: '',
-            city: '',
-            password: '',
-            Cpassword: '',
-            phone: '',
+            selectedValue:false,
+           
+
 
         }
     }
-    addToReduc = async () => {
+    // valueSelect = async () => {
 
-        if (this.state.name == '') {
-            alert('Please write Name')
-        }
-
-
-        else if (this.state.email == '') {
-            alert('Please write Email  ')
-        }
-
-        else if (this.state.password == '') {
-            alert('Please write PASSWORD  ')
-        }
-        else if (this.state.Cpassword == '') {
-            alert('Please write Confirm PASSWORD  ')
-        }
-        else if (this.state.phone == '') {
-            alert('Please write Phone no   ')
-        }
-        else {
-            let param = {
-                "name": this.state.name,
-
-                "phone": this.state.phone,
-                "email": this.state.email,
-
-                "password": this.state.password,
-            }
-            let response = await api(path.register, "POST", param)
-            // alert(response.message)
-            console.log(response.message)
-            alert(response.message)
-        }
+    //     if (this.state.selectedValue == '') {
+           
+    //     }
 
 
+       
+     
 
-
+    // }
+    selectedValue = () => {
+         this.props.set_tier(this.state.selectedValue)
     }
-
-    registerHandler = async (e) => {
-        e.preventDefault()
-        if (this.state.password !== this.state.confirmPassword) {
-            return alert('Password not match')
-        }
-        // this.props.setLoading(true)
-        let user = {
-            firstName: this.state.name.trim(),
-
-            phone: this.state.phone.trim(),
-            email: this.state.email.trim(),
-
-            password: this.state.password,
-            Cpassword: this.state.Cpassword,
-
-
-
-        }
-        // let res = await api.registerUser(user)
-        // if (res) {
-        //     await this.props._login(this.state.email, this.state.password)
-        //     window.location.replace("/")
-
-
-        // }
-
-    }
-
 
     render() {
         return (
@@ -109,25 +53,25 @@ class Tier extends React.Component {
                         <Text style={{ alignItems: 'center', alignSelf: 'flex-end', justifyContent: 'center', alignSelf: 'center', marginTop: 10, height: 43, fontSize: 30, color: "#fff", textDecorationLine: "underline" }} >
                             TIER SELECTION
                         </Text>
-                        <TouchableOpacity  style={styles.text1} >
+                        <TouchableOpacity  style={styles.text1} onPress={() => { this.setState({ selectedValue :"free"}) }} >  
                             <Text style={{ color: '#000', fontSize: 20 }}>FREE</Text>
                         </TouchableOpacity>
 
-                        <TouchableOpacity onPress={() => this.addToReduc()} style={styles.text1} >
+                        <TouchableOpacity onPress={() => { this.setState({ selectedValue :"bronze"}) }} style={styles.text1} >
                             <Text style={{ color: '#000', fontSize: 20 }}>BRONZE</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => this.addToReduc()} style={styles.text1} >
+                        <TouchableOpacity onPress={() => { this.setState({ selectedValue :"silver"}) }} style={styles.text1} >
                             <Text style={{ color: '#000', fontSize: 20 }}>SILVER</Text>
                         </TouchableOpacity>
 
 
-                        <TouchableOpacity onPress={() => this.addToReduc()} style={styles.text1} >
+                        <TouchableOpacity onPress={() => { this.setState({ selectedValue :"gold"}) }} style={styles.text1} >
                             <Text style={{ color: '#000', fontSize: 20 }}>GOLD</Text>
                         </TouchableOpacity>
 
 
 
-                        <TouchableOpacity onPress={() => this.props.navigation.navigate('Home')} style={styles.text} >
+                        <TouchableOpacity  onPress={() => this.selectedValue()} style={styles.text} >
                             <Text style={{ color: 'white', textDecorationLine: "underline", fontSize: 30 }}>Next</Text>
                         </TouchableOpacity>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
@@ -191,7 +135,21 @@ const styles = StyleSheet.create({
 
 });
 
-
-
-
-export default Tier
+const mapState = state => {
+    return {
+    //   logged: state.authReducer.logged,
+   
+    //   prizes: state.appReducer.prizes,
+    tier: state.appReducer.tier,
+    }
+  }
+  const mapDispatch = dispatch => {
+    return {
+ 
+    //   _getPrizes: () => dispatch(_getPrizes()),
+    set_tier: tiers => dispatch({type:"set_tier",payload:tiers})
+  
+  
+    }
+  }
+export default  connect(mapState,mapDispatch) ( Tier)
