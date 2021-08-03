@@ -24,6 +24,8 @@ export const _getPrizes = () => {
         if (res) {
             dispatch(set_prizes(res.result))
         }
+        return false
+        
     }
 } 
 export const _getTier = () => {

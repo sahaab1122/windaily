@@ -109,7 +109,7 @@ class Login extends React.Component {
                                 this.state.loading === true ? 
                                 <ActivityIndicator color="#fff" size="small" />
                                 :
-                                <Text style={{ color: 'white',fontSize:30 ,textDecorationLine:"underline"}}>SIGN IN</Text> 
+                                <Text style={{ color: '#04a4df',fontSize:30 }}>SIGN IN</Text> 
                             
                             }
                         </TouchableOpacity>
@@ -150,8 +150,13 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 20,
         height: 43,
-        color:"white",
-        paddingTop:10
+        color:"#04a4df",
+         
+        borderRadius:9,
+        backgroundColor:"#fff",
+        width:"60%",
+        textAlignVertical:"center",
+        marginVertical:20
        
         
     },
