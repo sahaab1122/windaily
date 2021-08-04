@@ -20,6 +20,7 @@ import { set_ticket } from '../store/actions/appAction';
 import LinearGradient from 'react-native-linear-gradient';
 import path from '../api/path';
 import api from '../api/api';
+import { _getTickets } from '../store/middlewares/appMiddleware';
 // import { code } from 'statuses';
 
 
@@ -37,23 +38,58 @@ class AddTicket extends React.Component {
     }
 
 
-    sentCode = async() => {
-        let param = {
-            "ticket": this.state.code,
-            "user": this.props.user._id
+    // login = async () => {
+
+    //     if (this.state.email == '') {
+    //         alert('Please write Email')
+    //     }
+
+    //     else if (this.state.password == '') {
+    //         alert('Please write PASSWORD  ')
+    //     }
+    //     else {
+    //         let param = {
+    //             "email": this.state.email,
+    //             "password": this.state.password
+    //         } 
+    //       await  this.setState({loading:true})
+    //        await this.props._login(param)
+    //        this.setState({loading:false})
+
+    //     }
+
+
+
+
+    // }
+
+
+    sentCode = async () => {
+        if (this.state.code == '') {
+            alert('Please add ticket')
         }
-        let response = await api(path.ticket, "POST", param)
+        else {
 
-        await this.props.setTicket(this.state.code)
-        this.props.navigation.navigate('Ticket')
-        // alert(response.message)
-        console.log(response.message)
-        alert(response.message)
+            let param = {
+                "ticket": this.state.code,
+                "user": this.props.user._id
+            }
+            let response = await api(path.ticket, "POST", param)
+
+            let res = await this.props._getTickets({
+
+            })
+            // await this.props.setTicket(this.state.code)
+            this.props.navigation.navigate('Ticket')
+            // alert(response.message)
+            console.log(response.message)
+            alert(response.message)
+        }
     }
-    
 
 
-   
+
+
 
 
 
@@ -68,7 +104,7 @@ class AddTicket extends React.Component {
         return (
             // <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%" }}>
 
-            <LinearGradient colors={['#04a4df', '#fff']}  style={{  width: "100%", height: "100%", justifyContent: "space-evenly" }}>
+            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%", justifyContent: "space-evenly" }}>
                 <View style={{ alignSelf: "center" }}>
                     <SmoothPinCodeInput
                         codeLength={6}
@@ -139,8 +175,8 @@ const mapState = state => {
 const mapDispatch = dispatch => {
     return {
         // _getFav: (token, uid) => dispatch(_getFavourite(token, uid)),
-        setTicket: ticks => dispatch(set_ticket(ticks))
-
+        setTicket: ticks => dispatch(set_ticket(ticks)),
+        _getTickets: () => dispatch(_getTickets())
         // setLoading: bol => dispatch(set_loading(bol))
     }
 }

@@ -11,6 +11,7 @@ import { ImageBackground, uri, StyleSheet, TextInput, View, TouchableOpacity, Te
 // import { _login } from '../store/middlewares/authMiddleware';
 import { connect } from 'react-redux';
 import { _login } from '../store/middlewares/authMiddleware';
+import LinearGradient from 'react-native-linear-gradient';
 
 
 
@@ -20,7 +21,7 @@ class Login extends React.Component {
         super();
         this.state = {
              
-            email: 'sahaabsabir6@gmail.com',
+            email: 'sahaabsabir06@gmail.com',
             password: '123',
             loading: false
         }
@@ -71,7 +72,7 @@ class Login extends React.Component {
     render() {
         return (
 
-            <View style={{ height: '100%',backgroundColor:"#04a4df" }}>
+            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%" }}>
 
                 {/* <ImageBackground resizeMode='stretch' source={require('../../assets/LogBack.png')} style={{
                     width: "100%", height: '100%', minHeight: Dimensions.get('window').height, position: 'absolute', alignItems: 'center',
@@ -89,7 +90,7 @@ class Login extends React.Component {
                         <Text style={{color:"white",paddingLeft:35,fontSize:20,flexGrow:0}}>
                             Email
                         </Text>
-                        <TextInput keyboardType={'email-address'} style={styles.inputfield} color="#000" placeholder="enter email"
+                        <TextInput keyboardType={'email-address'} style={styles.inputfield} color="#000" placeholder="andy@gmail.com"  placeholderTextColor="#888"
                             onChangeText={(email) => { this.setState({ email }) }}
                         />
 
@@ -97,7 +98,7 @@ class Login extends React.Component {
                         <Text style={{color:"white",paddingHorizontal:35,fontSize:20,paddingTop:10}}>
                             Password
                         </Text>
-                        <TextInput style={styles.inputfield} placeholder="enter password" color="#000" secureTextEntry={true}
+                        <TextInput style={styles.inputfield} placeholder="******" color="#000" secureTextEntry={true}  placeholderTextColor="#888"
                             onChangeText={(password) => { this.setState({ password }) }}
                         />
                         <TouchableOpacity onPress={() => this.props.navigation.navigate('Forgetpass')}>
@@ -109,23 +110,23 @@ class Login extends React.Component {
                                 this.state.loading === true ? 
                                 <ActivityIndicator color="#fff" size="small" />
                                 :
-                                <Text style={{ color: '#04a4df',fontSize:30 }}>SIGN IN</Text> 
+                                <Text style={{ color: '#fff',fontSize:20 }}>SIGN IN</Text> 
                             
                             }
                         </TouchableOpacity>
-                        <TouchableOpacity style={{paddingHorizontal:20}}>
+                        {/* <TouchableOpacity style={{paddingHorizontal:40}}>
                             <Text style={{color:"white",}}>
                                 Forget password?
                             </Text>
-                        </TouchableOpacity>
-                        <View style={{flexDirection:"row",paddingHorizontal:20,paddingVertical:20}}>
+                        </TouchableOpacity> */}
+                        <View style={{flexDirection:"row",paddingHorizontal:40,paddingVertical:20}}>
                             
 
-                            <Text style={{color:"white",}}>
+                            <Text style={{color:"#04a4df",}}>
                                 New to Win Daily? 
                             </Text>
                             <TouchableOpacity onPress={()=> this.props.navigation.navigate('Register')} style={{paddingHorizontal:10}}>
-                                <Text style={{color:"white",textDecorationLine:"underline"}}>
+                                <Text style={{color:"#04a4df",textDecorationLine:"underline"}}>
                                     Sign Up
                                 </Text>
                             </TouchableOpacity>
@@ -135,7 +136,7 @@ class Login extends React.Component {
 
                     </View>
                 </ScrollView>
-            </View>
+            </LinearGradient>
 
         )
 
@@ -150,10 +151,9 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 20,
         height: 43,
-        color:"#04a4df",
-         
-        borderRadius:9,
-        backgroundColor:"#fff",
+        color:"#04a4df", 
+        borderRadius:3,
+        backgroundColor:"#04a4df",
         width:"60%",
         textAlignVertical:"center",
         marginVertical:20
@@ -167,9 +167,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#F5F8FA',
         borderColor: '#97aabd',
         borderWidth: 1,
-        paddingLeft:20,
-        fontSize:19,
-         
+        paddingLeft:10,
+        fontSize:15,
+       
         fontFamily: 'Poppins',
         marginTop: 10,
         color: "#97AABD",

@@ -41,20 +41,20 @@ class Home extends React.Component {
         this.setState({ size: { width: layout.width, height: layout.height } });
     }
 
-   async componentDidMount() {
+    async componentDidMount() {
         if (this.props.tier === false) {
             this.setState({ modalVisible: true })
 
         }
-        
-            let res = await this.props._getPrizes()
-            console.log(this.props.prizes)
-        
+
+        let res = await this.props._getPrizes()
+        console.log(this.props.prizes)
+
 
     }
 
-    
- 
+
+
 
     render() {
         console.log(this.props.prizes)
@@ -81,16 +81,19 @@ class Home extends React.Component {
                     pageInfo
                     onAnimateNextPage={(p) => console.log(p)}
                 >
-                                  {/* {
+                    {/* {
                             this.props.items.map((item, index) =>
                                 <Card navigation={this.props.navigation} item={item} key={index} />
 
                             )
                         } */}
-                        {this.props.prizes.map((prize,index) =>
-                             <Image source={{uri :prize.image[0]}  } key={index} style={{ height: 200, width: widthPercentageToDP(90),backgroundColor:"#04a4df" }}></Image>
+                    {this.props.prizes.length < 1 ?
+                        <Image source={require("../Assets/amazon15.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image>
+
+                        :
+                        this.props.prizes.map((prize, index) =>
+                            <Image source={{ uri: prize.image[0] }} key={index} style={{ height: 200, width: widthPercentageToDP(90), backgroundColor: "#04a4df" }}></Image>
                         )}
-                    {/* <Image source={require("../Assets/amazon15.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
                     {/* <Image source={require("../Assets/amazon25.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
                     {/* <Image source={require("../Assets/amazon50.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
                     {/* <Image source={require("../Assets/amazon100.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}

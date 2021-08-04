@@ -2,6 +2,7 @@
 import React from 'react';
 
 import { ImageBackground, uri, StyleSheet, TextInput, View, TouchableOpacity, Text, Image, SafeAreaView, KeyboardAvoidingView, Dimensions, Platform, ScrollView } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 import api from '../api/api';
 import path from '../api/path';
 
@@ -95,7 +96,8 @@ class Register extends React.Component {
     render() {
         return (
 
-            <View style={{ height: '100%',paddingTop:20,backgroundColor:"#04a4df" }}>
+            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%" }}>
+
                  <Image source={require('../Assets/windaily.png')} style={{width:"80%",height:"20%", alignSelf:"center",marginVertical:20}} />
 
 
@@ -127,7 +129,7 @@ class Register extends React.Component {
                         />
 
                          <TouchableOpacity onPress={() => this.Register()} style={styles.text} >
-                            <Text style={{ color: 'white',textDecorationLine:"underline",fontSize:30 }}>Sign up</Text>
+                            <Text style={{ color: 'white', fontSize:20 }}>Sign up</Text>
                         </TouchableOpacity>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
                           
@@ -135,7 +137,7 @@ class Register extends React.Component {
 
                     </View>
                 </ScrollView>
-            </View>
+            </LinearGradient>
 
         )
 
@@ -148,8 +150,14 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-end',
         justifyContent: 'center',
         alignSelf: 'center',
-        marginTop: 10,
+        marginTop: 30,
         height: 43,
+        color:"#04a4df", 
+        borderRadius:3,
+        backgroundColor:"#04a4df",
+        width:"60%",
+        textAlignVertical:"center",
+        marginVertical:20
         
         
         

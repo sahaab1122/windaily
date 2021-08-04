@@ -17,6 +17,7 @@ import { Carousal } from '../components/Carousel';
 import Header from '../components/Header';
 import LinearGradient from 'react-native-linear-gradient';
 import { connect } from 'react-redux';
+import { _getTickets } from '../store/middlewares/appMiddleware';
 
 
 
@@ -25,18 +26,30 @@ class Ticket extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            tickets: ["123456"],
+            tickets: [""],
 
 
 
         }
+    }
+    async componentDidMount() {
+        let res = await this.props._getTickets()
+
+    }
+    getuser = async (e) => {
+        e.preventDefault()
+
+        let res = await this.props._getTickets({
+
+        })
+
     }
 
 
 
 
     render() {
-        console.log(this.props.ticket, 'ticket')
+        // console.log(this.props.ticket.map(item=>console.log), 'ticket')
         const { navigation } = this.props
         return (
 
@@ -52,33 +65,35 @@ class Ticket extends React.Component {
                 <ScrollView>
 
 
-                <View style={{ width: "95%", minHeight: 110,  borderRadius: 9, alignSelf: "center", justifyContent: "space-evenly" }} >
+                    <View style={{ width: "95%", minHeight: 110, borderRadius: 9, alignSelf: "center", justifyContent: "space-evenly" }} >
 
-                    {
-                        this.props.ticket.map((item, index) =>
-                        <View key={index} style={{ flexDirection: "row", alignSelf: "center",marginVertical:10,
-                        //  backgroundColor: index === this.props.ticket.length - 1 ? "red" : "transparent"
-                    }}>
-                                {
-                                    Array(6).fill().map((_, innerIndex) =>
-                                    
-                                    <ImageBackground key={innerIndex} source={require('../Assets/black.png')} style={{ margin: -10, width: 69, height: 50, textAlign: "center", borderRadius: 20, textAlignVertical: "center", fontSize: 25, }} >
-                                            <Text style={{ color: "#fff", textAlign: 'center', textAlignVertical: "center", alignSelf: "center", marginTop: 12, fontSize: 25 }}>
+                        {
+                            this.props.tickets.map((ticket, index) =>
+                                <View key={index} style={{
+                                    flexDirection: "row", alignSelf: "center", marginVertical: 10,
+                                    //  backgroundColor: index === this.props.ticket.length - 1 ? "red" : "transparent"
+                                }}>
+                                    {
+                                        Array(6).fill().map((_, innerIndex) =>
 
-                                                {item.charAt(innerIndex)}
-                                            </Text>
-                                        </ImageBackground>)
-                                }
-                            </View>
+                                            <ImageBackground key={innerIndex} source={require('../Assets/black.png')} style={{ margin: -10, width: 69, height: 50, textAlign: "center", borderRadius: 20, textAlignVertical: "center", fontSize: 25, }} >
+                                                <Text style={{ color: "#fff", textAlign: 'center', textAlignVertical: "center", alignSelf: "center", marginTop: 12, fontSize: 25 }}>
 
-
-)
-}
+                                                    {ticket.ticket.charAt(innerIndex)}
+                                                </Text>
+                                            </ImageBackground>
+                                        )
+                                    }
+                                </View>
 
 
-                </View >
+                            )
+                        }
 
-</ScrollView>
+
+                    </View >
+
+                </ScrollView>
             </LinearGradient>
 
         )
@@ -107,16 +122,18 @@ const styles = StyleSheet.create({
 
 const mapState = state => {
     return {
-        ticket: state.appReducer.ticket,
+        // ticket: state.appReducer.ticket,
         // loading: state.globalReducer.loading,
         // token: state.authReducer.token,
         // user: state.authReducer.user,
+        tickets: state.appReducer.tickets,
     }
 }
 const mapDispatch = dispatch => {
     return {
         // _getFav: (token, uid) => dispatch(_getFavourite(token, uid)),
-        setTicket: ticks => dispatch(set_ticket(ticks))
+        setTicket: ticks => dispatch(set_ticket(ticks)),
+        _getTickets: () => dispatch(_getTickets())
 
         // setLoading: bol => dispatch(set_loading(bol))
     }

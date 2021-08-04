@@ -2,6 +2,7 @@ import api from '../../api/api';
 import path from '../../api/path';
 // import { setError, setLoading } from '../actions/globalActions'
 import { set_items,set_prizes,  set_featured, set_user,set_categories, set_ticket, set_tier,  } from '../actions/appAction'
+import Store from '../Store';
 
 
 export const _getItems = () => {
@@ -51,16 +52,22 @@ export const _deleteItems = () => {
         }
     }
 }
-export const _getTicket = (token, uid) => {
+export const _getTickets = () => {
 
     return async (dispatch, getState) => {
 
-        let res = await api.getTicket(token, uid);
+        let res = await api(path.getticketbyid + Store.store.getState().authReducer.user._id, "GET",)
+        console.log(res)
         if (res) {
             dispatch(set_ticket(res.result))
+
         }
+        return false
     }
 }
+
+//getticketbyid
+
 
 export const _getUsers = (token) => {
 
