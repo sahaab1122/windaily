@@ -41,9 +41,9 @@ class Register extends React.Component {
         else if (this.state.Cpassword == '') {
             alert('Please write Confirm PASSWORD  ')
         }
-        else if (this.state.phone == '') {
-            alert('Please write Phone no   ')
-        }
+        // else if (this.state.phone == '') {
+        //     alert('Please write Phone no   ')
+        // }
         else {
             let param = {
                 "name": this.state.name,
@@ -54,9 +54,18 @@ class Register extends React.Component {
                 "password": this.state.password,
             }
             let response = await api(path.register, "POST", param)
+            
+            if (response.success === true) {
+                
+                
+                this.props.navigation.navigate('Login')
+           
+            } else {
+                alert(response.message)
+            }
             // alert(response.message)
-            console.log(response.message)
-            alert(response.message)
+            // console.log(response.message)
+            // alert(response.message)
         }
 
 
@@ -96,7 +105,7 @@ class Register extends React.Component {
     render() {
         return (
 
-            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%" }}>
+            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%",minHeight:Dimensions.get('window').height }}>
 
                  <Image source={require('../Assets/windaily.png')} style={{width:"80%",height:"20%", alignSelf:"center",marginVertical:20}} />
 
@@ -111,7 +120,7 @@ class Register extends React.Component {
                         />
                        
                         {/* <Inputfield  text="Phone or Mail" /> */}
-                        <TextInput keyboardType={'email-address'} style={styles.inputfield} placeholder="Phone no"  color="#000" placeholderTextColor="grey"
+                        <TextInput keyboardType={'email-address'} style={styles.inputfield} placeholder="Phone (optional)"  color="#000" placeholderTextColor="grey"
                             onChangeText={(phone) => { this.setState({ phone }) }}
                         />
                         {/* <Inputfield text="Email" keyboardType="email-address" /> */}

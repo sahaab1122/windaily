@@ -15,16 +15,33 @@ import AntDesign from 'react-native-vector-icons/AntDesign'
 import Entypo from 'react-native-vector-icons/Entypo'
 import { Carousal } from '../components/Carousel';
 import Card from '../components/Card';
+import { connect } from 'react-redux';
+import { _getWinner } from '../store/middlewares/appMiddleware';
 
 
 
 
 class Winner extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+                active:"",
+ 
+        }
+    }
 
 
 
-
-
+      componentDidMount() {
+         this.getwinner()
+      }
+      getwinner =   ( ) => {
+        
+        // this.props.setLoading(true)
+         this.props._getWinner( )
+    
+    
+      }
 
 
 
@@ -34,42 +51,26 @@ class Winner extends React.Component {
 
 
     render() {
+        console.log(this.props.winner[0],'\n\n\n\n\n')
+ 
         const { navigation } = this.props
         return (
 
             <Wrapper navigation={navigation}>
                 <ScrollView>
 
-                <View style={{ flexDirection: "row", justifyContent: "center" }}>
+                <View style={{ flexDirection: 'row', flexWrap: "wrap", justifyContent: "center", }}>
+                        {
+                             this.props.winner.map((winner, index) =>
+                                <Card navigation={this.props.navigation} winner={winner} key={index} />
 
-                    <Card />
-                    <Card />
-                    <Card />
-                </View>
-                <View style={{ flexDirection: "row", justifyContent: "center" }}>
+                            )
+                        }
 
-                    <Card />
-                    <Card />
-                    <Card />
-                </View>
-                <View style={{ flexDirection: "row", justifyContent: "center" }}>
 
-                    <Card />
-                    <Card />
-                    <Card />
-                </View>
-                <View style={{ flexDirection: "row", justifyContent: "center" }}>
-
-                    <Card />
-                    <Card />
-                    <Card />
-                </View>
-                <View style={{ flexDirection: "row", justifyContent: "center" }}>
-
-                    <Card />
-                    <Card />
-                    <Card />
-                </View>
+                    </View>
+               
+                
                 </ScrollView>
 
             </Wrapper>
@@ -80,7 +81,20 @@ class Winner extends React.Component {
     }
 }
 
-export default Winner
+const mapState = state => {
+    return {
+      winner: state.appReducer.winner,
+  
+    }
+  }
+  const mapDispatch = dispatch => {
+    return {
+      _getWinner: () => dispatch(_getWinner())
+  
+  
+    }
+  }
+  export default connect(mapState, mapDispatch)(Winner)
 
 
 

@@ -1,7 +1,7 @@
 import api from '../../api/api';
 import path from '../../api/path';
 // import { setError, setLoading } from '../actions/globalActions'
-import { set_items,set_prizes,  set_featured, set_user,set_categories, set_ticket, set_tier,  } from '../actions/appAction'
+import { set_items, set_prizes, set_featured, set_user, set_categories, set_ticket, set_tier, set_winner, } from '../actions/appAction'
 import Store from '../Store';
 
 
@@ -26,9 +26,9 @@ export const _getPrizes = () => {
             dispatch(set_prizes(res.result))
         }
         return false
-        
+
     }
-} 
+}
 export const _getTier = () => {
 
     return async (dispatch, getState) => {
@@ -39,8 +39,8 @@ export const _getTier = () => {
             dispatch(set_tier(res.result))
         }
     }
-} 
- 
+}
+
 export const _deleteItems = () => {
 
     return async (dispatch, getState) => {
@@ -79,8 +79,17 @@ export const _getUsers = (token) => {
         }
     }
 }
- 
- 
- 
+
+export const _getWinner = () => {
+
+    return async (dispatch, getState) => {
+
+        let res = await api(path.getwinner, "GET",)
+        if (res) {
+            dispatch(set_winner(res.result))
+        }
+    }
+}
+
 
 

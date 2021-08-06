@@ -1,4 +1,4 @@
-import { SET_TIER,SET_PRIZES, SET_CATEGORY, SET_FAVOURITE,  SET_ITEMS,  SET_TICKET,  SET_USERS, SET_TICKETS } from "./types";
+import { SET_TIER,SET_PRIZES, SET_CATEGORY, SET_FAVOURITE,  SET_ITEMS,  SET_TICKET,  SET_USERS, SET_TICKETS, SET_WINNER } from "./types";
 
 export const set_prizes = (payload) => (
     {
@@ -30,4 +30,9 @@ export const set_tier = (payload) => (
         payload
     }
 )
-
+export const set_winner = (payload) => (
+    {
+        type: SET_WINNER,
+        payload
+    }
+)

@@ -56,11 +56,11 @@ class Ticket extends React.Component {
             <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%" }}>
 
                 <Header navigation={navigation} />
-                <TouchableOpacity onPress={() => this.props.navigation.navigate('Wheel')} style={{ position: "absolute", top: 13, right: 20 }}>
+                {/* <TouchableOpacity onPress={() => this.props.navigation.navigate('Wheel')} style={{ position: "absolute", top: 13, right: 20 }}>
 
                     <Entypo name="calendar" color="#fff" size={30} />
                 </TouchableOpacity >
-
+ */}
 
                 <ScrollView>
 

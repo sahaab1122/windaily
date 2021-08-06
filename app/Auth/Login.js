@@ -21,7 +21,7 @@ class Login extends React.Component {
         super();
         this.state = {
              
-            email: 'sahaabsabir06@gmail.com',
+            email: 'zain@gmail.com',
             password: '123',
             loading: false
         }
@@ -72,14 +72,15 @@ class Login extends React.Component {
     render() {
         return (
 
-            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%" }}>
+            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%",  minHeight:Dimensions.get('window').height }}>
 
                 {/* <ImageBackground resizeMode='stretch' source={require('../../assets/LogBack.png')} style={{
                     width: "100%", height: '100%', minHeight: Dimensions.get('window').height, position: 'absolute', alignItems: 'center',
-
+                    
                 }} /> */}
                 <Image source={require('../Assets/windaily.png')} style={{width:"80%",height:"20%", alignSelf:"center",marginVertical:20}} />
 
+               
                 <ScrollView contentContainerStyle={{ minHeight: Dimensions.get('window').height, justifyContent: 'space-evenly' }} showsVerticalScrollIndicator={false} >
          
                     {/* <Middle /> */}
@@ -92,7 +93,7 @@ class Login extends React.Component {
                         </Text>
                         <TextInput keyboardType={'email-address'} style={styles.inputfield} color="#000" placeholder="andy@gmail.com"  placeholderTextColor="#888"
                             onChangeText={(email) => { this.setState({ email }) }}
-                        />
+                            />
 
                         {/* <Inputfield text="Password" /> */}
                         <Text style={{color:"white",paddingHorizontal:35,fontSize:20,paddingTop:10}}>
@@ -100,7 +101,7 @@ class Login extends React.Component {
                         </Text>
                         <TextInput style={styles.inputfield} placeholder="******" color="#000" secureTextEntry={true}  placeholderTextColor="#888"
                             onChangeText={(password) => { this.setState({ password }) }}
-                        />
+                            />
                         <TouchableOpacity onPress={() => this.props.navigation.navigate('Forgetpass')}>
 
                              
@@ -111,12 +112,12 @@ class Login extends React.Component {
                                 <ActivityIndicator color="#fff" size="small" />
                                 :
                                 <Text style={{ color: '#fff',fontSize:20 }}>SIGN IN</Text> 
-                            
+                                
                             }
                         </TouchableOpacity>
                         {/* <TouchableOpacity style={{paddingHorizontal:40}}>
                             <Text style={{color:"white",}}>
-                                Forget password?
+                            Forget password?
                             </Text>
                         </TouchableOpacity> */}
                         <View style={{flexDirection:"row",paddingHorizontal:40,paddingVertical:20}}>
@@ -136,6 +137,7 @@ class Login extends React.Component {
 
                     </View>
                 </ScrollView>
+                        
             </LinearGradient>
 
         )

@@ -16,6 +16,8 @@ import Entypo from 'react-native-vector-icons/Entypo'
 import { Carousal } from '../components/Carousel';
 import Header from '../components/Header';
 import LinearGradient from 'react-native-linear-gradient';
+import { connect } from 'react-redux';
+import { _getWinner } from '../store/middlewares/appMiddleware';
 
 
 
@@ -24,53 +26,70 @@ class Result extends React.Component {
     constructor() {
         super();
         this.state = {
-            tickets: ["123456"],
+            tickets: [""],
 
 
 
         }
     }
 
+    componentDidMount() {
+        this.getwinner()
+    }
+    getwinner = () => {
+
+        // this.props.setLoading(true)
+        this.props._getWinner()
+
+
+    }
+
+
 
 
     render() {
+        console.log(this.props.winner)
         return (
 
-            <LinearGradient colors={['#04a4df',  '#fff']} style={{ width: "100%", height: "100%",  }}>
+            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%", }}>
                 <Header />
+                <ScrollView>
 
 
-                <View style={{ width: "95%", height: 130, backgroundColor: "white", borderRadius: 9, alignSelf: "center", justifyContent: "space-evenly" }} >
+
 
                     {
-                        this.state.tickets.map((item, index) =>
-                            <View key={index} style={{ flexDirection: "row",alignSelf:"center" }}>
-                                {
-                                    Array(6).fill().map((_, innerIndex) =>
+                        this.props.winner.map((winner, index) =>
+                            <View key={index} style={{ width: "95%", height: 120, marginVertical: 10, backgroundColor: "white", borderRadius: 9, alignSelf: "center", alignItems: "center" }}>
+                                <View style={{ flexDirection: "row", }}>
+                                    {
+                                        Array(6).fill().map((_, innerIndex) =>
 
-                                        <ImageBackground key={innerIndex} source={require('../Assets/black.png')} style={{margin: -10, width:69,height:50,textAlign:"center",borderRadius:20,textAlignVertical:"center",fontSize:25 }} >
-                                          <Text style={{color:"#fff",textAlign:'center',textAlignVertical:"center",alignSelf:"center",marginTop:12,fontSize:25}}>
-                                              
-                                                {item.charAt(innerIndex)}
-                                              </Text>
-                                        </ImageBackground>)
-                                }
+                                            <ImageBackground key={innerIndex} source={require('../Assets/black.png')} style={{ margin: -10, width: 70, height: 70, justifyContent: "center" }} >
+                                                <Text style={{ color: "#fff", textAlign: 'center', fontSize: 25 }}>
+
+                                                    {winner.ticket.charAt(innerIndex)}
+                                                </Text>
+                                            </ImageBackground>)
+                                    }
+                                </View>
+                                <Text style={{ fontSize: 23, color: "#04a4df", fontWeight: "bold" }}>
+                                    {winner.user.name}
+                                </Text>
+                                <Text style={{ fontSize: 15, color: "#04a4df" }}>
+                                    Prize:500$
+                                </Text>
+                                {/* <Text style={{ fontSize: 10, color: "#04a4df" }}>
+                                    12 winners
+                                </Text> */}
+
                             </View>
 
-
                         )
+
                     }
 
-                    <Text style={{ alignSelf: "center",fontSize:23,color:"#04a4df",fontWeight:"bold" }}>
-                        Draw 677
-                    </Text>
-                    <Text style={{ alignSelf: "center",fontSize:15 ,color:"#04a4df"}}>
-                        Prize:500$
-                    </Text>
-                    <Text style={{ alignSelf: "center",fontSize:10,color:"#04a4df" }}>
-                       12 winners
-                    </Text>
-                </View >
+                </ScrollView>
             </LinearGradient>
 
         )
@@ -99,5 +118,18 @@ const styles = StyleSheet.create({
 
 
 
-export default Result
 
+const mapState = state => {
+    return {
+        winner: state.appReducer.winner,
+
+    }
+}
+const mapDispatch = dispatch => {
+    return {
+        _getWinner: () => dispatch(_getWinner())
+
+
+    }
+}
+export default connect(mapState, mapDispatch)(Result)

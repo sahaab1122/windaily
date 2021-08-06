@@ -1,9 +1,9 @@
-import { SET_CATEGORIES, SET_ITEMS, SET_USERS, SET_FAVOURITE, SET_TICKET, SET_PRIZES, SET_TIER, SET_TICKETS } from '../actions/types'
+import { SET_CATEGORIES, SET_ITEMS, SET_USERS, SET_FAVOURITE, SET_TICKET, SET_PRIZES, SET_TIER, SET_TICKETS, SET_WINNER } from '../actions/types'
 
 const initialState = {
     prizes: [], items: [], tier:false,
     tickets: [], users: [], coupons: [],
-    transactions: [], orders: [],
+    transactions: [], orders: [], winner:[]
      
 }
 
@@ -40,12 +40,13 @@ const appReducer = (state = initialState, action) => {
                 users: action.payload,
             }
         }
-        // case SET_COUPON: {
-        //     return {
-        //         ...state,
-        //         coupons: action.payload,
-        //     }
-        // }
+         
+            case SET_WINNER: {
+                return {
+                    ...state,
+                    winner: action.payload,
+                }
+            }
         // case SET_ORDERS: {
         //     return {
         //         ...state,

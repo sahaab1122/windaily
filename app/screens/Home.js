@@ -79,7 +79,7 @@ class Home extends React.Component {
                     style={{ width: "90%", height: 200, alignSelf: "center" }}
                     autoplay
                     pageInfo
-                    onAnimateNextPage={(p) => console.log(p)}
+                
                 >
                     {/* {
                             this.props.items.map((item, index) =>
@@ -92,7 +92,7 @@ class Home extends React.Component {
 
                         :
                         this.props.prizes.map((prize, index) =>
-                            <Image source={{ uri: prize.image[0] }} key={index} style={{ height: 200, width: widthPercentageToDP(90), backgroundColor: "#04a4df" }}></Image>
+                            <Image source={{ uri: prize.image[0] }} key={index} style={{ height: 200, width: widthPercentageToDP(90)  }}></Image>
                         )}
                     {/* <Image source={require("../Assets/amazon25.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
                     {/* <Image source={require("../Assets/amazon50.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
@@ -101,9 +101,9 @@ class Home extends React.Component {
                 </Carousel>
                 <View style={{ flex: 1, justifyContent: "space-evenly" }}>
 
-                    <Text style={{ justifyContent: "center", fontSize: 26, alignSelf: "center", color: "#fff" }}>
+                    {/* <Text style={{ justifyContent: "center", fontSize: 26, alignSelf: "center", color: "#fff" }}>
                         Draw 678
-                    </Text>
+                    </Text> */}
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('AddTicket')} style={styles.text}>
                         <Text style={{ color: "#fff", fontSize: 20 }}>
                             Get a Ticket

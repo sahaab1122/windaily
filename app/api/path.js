@@ -10,5 +10,6 @@ let BASE_URL = 'https://windailyapp.herokuapp.com/'
     gettier: BASE_URL + 'tier',
     ticket: BASE_URL + 'ticket',
     getticket: BASE_URL + 'tickets',
-    getticketbyid: BASE_URL + 'tickets/'
+    getticketbyid: BASE_URL + 'tickets/',
+    getwinner: BASE_URL + 'winner',
 }

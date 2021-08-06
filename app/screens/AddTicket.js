@@ -74,16 +74,20 @@ class AddTicket extends React.Component {
                 "ticket": this.state.code,
                 "user": this.props.user._id
             }
+
             let response = await api(path.ticket, "POST", param)
+            if (response.success === true) {
+                let res = await this.props._getTickets({
 
-            let res = await this.props._getTickets({
-
-            })
-            // await this.props.setTicket(this.state.code)
-            this.props.navigation.navigate('Ticket')
-            // alert(response.message)
-            console.log(response.message)
-            alert(response.message)
+                })
+                // await this.props.setTicket(this.state.code)
+                this.props.navigation.navigate('Ticket')
+                // alert(response.message)
+                // console.log(response.message)
+                // alert(response.message)
+            } else {
+                alert(response.message)
+            }
         }
     }
 

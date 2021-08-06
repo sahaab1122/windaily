@@ -8,6 +8,7 @@ export const SET_USERS = 'SET_USERS';
 export const SET_PRIZES = 'SET_PRIZES';
 export const SET_TIER = 'SET_TIER';
 export const SET_TICKETS = 'SET_TICKETS'
+export const SET_WINNER = 'SET_WINNER'
 
 export const ADD_TO_CART = "ADD_TO_CART";
 export const ADD_QUANTITY_TO_CART = "ADD_QUANTITY_TO_CART";
