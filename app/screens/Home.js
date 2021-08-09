@@ -46,6 +46,9 @@ class Home extends React.Component {
             this.setState({ modalVisible: true })
 
         }
+        else {
+            this.setState({ modalVisible: false })
+        }
 
         let res = await this.props._getPrizes()
         console.log(this.props.prizes)
@@ -57,8 +60,8 @@ class Home extends React.Component {
 
 
     render() {
-        console.log(this.props.prizes)
-
+        console.log(this.props.tier, "tierrrr")
+ 
         const { navigation } = this.props
 
         return (
@@ -126,7 +129,7 @@ class Home extends React.Component {
                 {
                     this.props.tier === false &&
                     <Modal visible={true} animationType='slide' >
-                        <Tier />
+                        <Tier navigation={this.props.navigation} />
                     </Modal>
                 }
 

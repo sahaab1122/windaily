@@ -2,7 +2,7 @@
 
 
 export default function api(path, method, params) {
-    let options;
+     let options;
  
 
     options = {
@@ -16,6 +16,7 @@ export default function api(path, method, params) {
     };
 
     return fetch(path, options)
+    
         .then(resp => resp.json())
         .then(json => {
 

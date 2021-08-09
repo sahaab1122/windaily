@@ -5,6 +5,7 @@ let BASE_URL = 'https://windailyapp.herokuapp.com/'
  export default {
     login: BASE_URL + 'login',
     register: BASE_URL + 'register',
+    tier: BASE_URL + 'tier',
     prizesadd: BASE_URL +'prizes/add',
     getprizes: BASE_URL + 'prizes',
     gettier: BASE_URL + 'tier',

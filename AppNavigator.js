@@ -45,7 +45,7 @@ class AppNavigator extends React.Component {
         return (
           <Stack.Navigator headerMode="none" screenOptions={{ ...TransitionPresets.SlideFromRightIOS, gestureEnabled: true, gestureDirection: 'horizontal' }}>
             <Stack.Screen name="Splash" component={Splash} options={{ headerShown: false }} />
-            <Stack.Screen name="Tier" component={Tier} options={{ title: '' }} />
+            {/* <Stack.Screen name="Tier" component={Tier} options={{ title: '' }} /> */}
             <Stack.Screen name="Pay" component={Pay} options={{ title: '' }} />
             <Stack.Screen name="Login" component={Login} options={{ title: '' }} />
             <Stack.Screen name="Register" component={Register} options={{ title: '' }} />
@@ -59,6 +59,7 @@ class AppNavigator extends React.Component {
           > 
             <Stack.Screen name='Home' component={Home} />
             {/* <Stack.Screen name='About' component={About} /> */}
+            <Stack.Screen name="Tier" component={Tier} options={{ title: '' }} />
             <Stack.Screen name='Setting' component={Setting} />
             <Stack.Screen name="AddTicket" component={AddTicket} />
             <Stack.Screen name="MoreTicket" component={MoreTicket} />
@@ -102,10 +103,7 @@ class AppNavigator extends React.Component {
         else if (routeName === 'Setting') {
           return false;
         }
-        else if (routeName === 'Tier') {
-          return false;
-        }
-        
+    
         return true;
       }
        

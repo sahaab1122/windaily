@@ -1,8 +1,9 @@
 
 import React from 'react';
 
-import { ImageBackground, uri, StyleSheet, TextInput, View, TouchableOpacity, Text, Image, SafeAreaView, KeyboardAvoidingView, Dimensions, Platform, ScrollView } from 'react-native';
+import { ImageBackground, uri, StyleSheet, TextInput, View, TouchableOpacity, Text, Image, SafeAreaView, KeyboardAvoidingView, Dimensions, Platform, ScrollView, ActivityIndicator } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import { connect } from 'react-redux';
 import api from '../api/api';
 import path from '../api/path';
 
@@ -21,6 +22,7 @@ class Register extends React.Component {
             password: '',
             Cpassword: '',
             phone: '',
+            loading:false
 
         }
     }
@@ -53,7 +55,9 @@ class Register extends React.Component {
              
                 "password": this.state.password,
             }
+            await  this.setState({loading:true})
             let response = await api(path.register, "POST", param)
+            this.setState({loading:false})
             
             if (response.success === true) {
                 
@@ -63,9 +67,7 @@ class Register extends React.Component {
             } else {
                 alert(response.message)
             }
-            // alert(response.message)
-            // console.log(response.message)
-            // alert(response.message)
+           
         }
 
 
@@ -138,7 +140,12 @@ class Register extends React.Component {
                         />
 
                          <TouchableOpacity onPress={() => this.Register()} style={styles.text} >
+                         {
+                                this.state.loading === true ? 
+                                <ActivityIndicator color="#fff" size="small" />
+                                :
                             <Text style={{ color: 'white', fontSize:20 }}>Sign up</Text>
+                         }
                         </TouchableOpacity>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
                           
@@ -192,8 +199,16 @@ const styles = StyleSheet.create({
 
 
 });
+const mapState = state => {
+    return {
+      
+    }
+}
+const mapDispatch = dispatch => {
+    return {
+    
+        setLoading: (bol) => dispatch(set_loading(bol)),
+    }
+}
 
-
-
-
-export default Register
+export default connect(mapState, mapDispatch)(Register)
