@@ -70,30 +70,30 @@ class Tier extends React.Component {
 
                     <View style={{ width: '100%', height: "90%" }} >
 
-                        <Text style={{ alignItems: 'center', alignSelf: 'flex-end', justifyContent: 'center', alignSelf: 'center', marginTop: 10, height: 43, fontSize: 30, color: "#fff", textDecorationLine: "underline" }} >
+                        <Text style={{ alignItems: 'center', fontFamily: "Poppins-Regular" ,alignSelf: 'flex-end', justifyContent: 'center', alignSelf: 'center', marginTop: 10, height: 43, fontSize: 30, color: "#fff", textDecorationLine: "underline" }} >
                             TIER SELECTION
                         </Text>
                         <TouchableOpacity style={styles.text1} onPress={() => this.setState({ selectedValue: "free" })} >
-                            <Text style={{ color: '#000', fontSize: 20 }}>FREE</Text>
+                            <Text style={{ color: '#000', fontSize: 20,fontFamily: "Poppins-Regular"  }}>FREE</Text>
                         </TouchableOpacity>
 
                         <TouchableOpacity onPress={() => this.setState({ selectedValue: "bronze" })} style={styles.text1} >
-                            <Text style={{ color: '#000', fontSize: 20 }}>BRONZE</Text>
+                            <Text style={{ color: '#000', fontSize: 20,fontFamily: "Poppins-Regular"  }}>BRONZE</Text>
                         </TouchableOpacity>
                         <TouchableOpacity onPress={() => this.setState({ selectedValue: "silver" })} style={styles.text1} >
-                            <Text style={{ color: '#000', fontSize: 20 }}>SILVER</Text>
+                            <Text style={{ color: '#000', fontSize: 20,fontFamily: "Poppins-Regular"  }}>SILVER</Text>
                         </TouchableOpacity>
 
 
                         <TouchableOpacity onPress={() => this.setState({ selectedValue: "gold" })} style={styles.text1} >
-                            <Text style={{ color: '#000', fontSize: 20 }}>GOLD</Text>
+                            <Text style={{ color: '#000', fontSize: 20,fontFamily: "Poppins-Regular"  }}>GOLD</Text>
                         </TouchableOpacity>
 
 
 
                         <TouchableOpacity onPress={() => this.selectedValue()} style={styles.text} >
 
-                            <Text style={{ color: 'white', textDecorationLine: "underline", fontSize: 30 }}>Next</Text>
+                            <Text style={{ color: 'white', textDecorationLine: "underline", fontSize: 30,fontFamily: "Poppins-Regular"  }}>Next</Text>
 
                         </TouchableOpacity>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
@@ -117,6 +117,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 10,
         height: 43,
+        fontFamily: "Poppins-Regular" 
 
 
 
@@ -131,7 +132,8 @@ const styles = StyleSheet.create({
         height: 43,
         backgroundColor: '#fff',
         borderRadius: 3,
-        width: "90%"
+        width: "90%",
+        fontFamily: "Poppins-Regular" 
 
 
 
@@ -144,7 +146,7 @@ const styles = StyleSheet.create({
         borderColor: '#97aabd',
         borderWidth: 1,
         padding: 0, margin: 0,
-        fontFamily: 'Poppins',
+        fontFamily: "Poppins-Regular" ,
         marginTop: 20,
         // color: "#97AABD",
         alignSelf: 'center',

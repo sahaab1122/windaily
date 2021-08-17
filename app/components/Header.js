@@ -30,12 +30,13 @@ const styles = StyleSheet.create({
         borderColor: '#97aabd',
         borderWidth: 1,
         padding: 0, margin: 0,
-        fontFamily: 'Poppins',
+        
         marginTop: 20,
         color: "#97AABD",
         alignSelf: 'center', 
         alignItems: 'flex-start',
-        paddingHorizontal:10
+        paddingHorizontal:10,
+        fontFamily: "Poppins-Regular" 
         
 
 

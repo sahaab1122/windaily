@@ -16,9 +16,9 @@ export default ({ winner, navigation, style }) => {
             {/* <Image style={{ width: "100%", height: 92, resizeMode: 'contain', backgroundColor: '#F5F8FA'}} source={require('../Assets/dumy.png')} /> */}
             <View style={styles.secview}>
                 <View style={styles.thrdview}>
-                    <Text style={{ fontSize: 18,alignSelf:"center" }}>{winner.user.name} </Text>
-                    <Text style={{ fontSize: 14,alignSelf:"center" }}>10$</Text>
-                    <Text style={{ fontSize: 15,alignSelf:"center" }}>Draw 669</Text>
+                    <Text style={{ fontSize: 18,alignSelf:"center",fontFamily: "Poppins-Regular"  }}>{winner.user.name} </Text>
+                    <Text style={{ fontSize: 14,alignSelf:"center" ,fontFamily: "Poppins-Regular" }}>10$</Text>
+                    <Text style={{ fontSize: 15,alignSelf:"center",fontFamily: "Poppins-Regular"  }}>Draw 669</Text>
                 </View>
                 {/* <AddToFavorite item={item} /> */}
             </View>

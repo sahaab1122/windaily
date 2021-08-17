@@ -40,45 +40,45 @@ class Setting extends React.Component {
 
 
          <TouchableOpacity style={styles.text}>
-            <Text style={{color:"white"}}>
+            <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
                 Contact us
             </Text>
          </TouchableOpacity>
          <TouchableOpacity style={styles.text}>
-            <Text style={{color:"white"}}>
+            <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
                 Rate us
             </Text>
          </TouchableOpacity>
          <TouchableOpacity style={styles.text}>
-            <Text style={{color:"white"}}>
+            <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
                  Privacy Policy
             </Text>
          </TouchableOpacity>
          <TouchableOpacity style={styles.text}>
-            <Text style={{color:"white"}}>
+            <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
                 Terms Condition
             </Text>
          </TouchableOpacity>
          <TouchableOpacity style={styles.text}>
-            <Text style={{color:"white"}}>
+            <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
                 Invite Friends
             </Text>
          </TouchableOpacity>
-         <Text style={{alignSelf:"center",justifyContent:"center",color:"#fff"}}>
+         <Text style={{alignSelf:"center",justifyContent:"center",color:"#fff",fontFamily: "Poppins-Regular" }}>
              Your Referral Id: sahab
          </Text>
          <TouchableOpacity style={styles.text}>
-            <Text style={{color:"white"}}>
+            <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
                 Follow us on Instagram
             </Text>
          </TouchableOpacity>
          <TouchableOpacity style={styles.text}>
-            <Text style={{color:"white"}}>
+            <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
                 Follow us on Facebook
             </Text>
          </TouchableOpacity>
          <TouchableOpacity style={styles.text}>
-            <Text style={{color:"white"}}>
+            <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
                 Withdraw your Balance
             </Text>
          </TouchableOpacity>
@@ -102,7 +102,8 @@ const styles = StyleSheet.create({
         height: 43,
         backgroundColor: '#04a4df',
         borderRadius: 10,
-        width: "70%"
+        width: "70%",
+        fontFamily: "Poppins-Regular" 
     },
     
     

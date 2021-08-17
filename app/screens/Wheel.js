@@ -48,11 +48,11 @@ class Wheel extends Component {
             ))}
         </Picker>
 
-        <Text style={{margin: 20,justifyContent:"center",alignSelf:"center",fontSize:30,color:'#04a4df'}}>
+        <Text style={{margin: 20,fontFamily: "Poppins-Regular" ,justifyContent:"center",alignSelf:"center",fontSize:30,color:'#04a4df'}}>
           Selected: {this.state.itemList[this.state.selectedItem]}
         </Text>
 
-        <Text style={{margin: 20,justifyContent:"center",color:"#fff",alignSelf:"center",backgroundColor:"#04a4df",width:"50%",height:30,textAlign:"center",textAlignVertical:"center",borderRadius:5}} onPress={this.onAddItem}>
+        <Text style={{margin: 20,fontFamily: "Poppins-Regular" ,justifyContent:"center",color:"#fff",alignSelf:"center",backgroundColor:"#04a4df",width:"50%",height:30,textAlign:"center",textAlignVertical:"center",borderRadius:5}} onPress={this.onAddItem}>
           Add item
         </Text>
       </LinearGradient>

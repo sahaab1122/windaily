@@ -69,10 +69,10 @@ class Home extends React.Component {
             <Wrapper navigation={navigation} onLayout={this._onLayoutDidChange} >
                 <View style={{ position: "absolute", alignSelf: "center", justifyContent: "center", paddingVertical: 9 }}>
 
-                    <Text style={{ color: "#fff", fontSize: 15, fontWeight: 'bold' }}>
+                    <Text style={{ color: "#fff", fontSize: 15, fontWeight: 'bold',fontFamily: "Poppins-Regular"  }}>
                         Balance
                     </Text>
-                    <Text style={{ alignSelf: "center", color: "#fff", fontWeight: "bold" }}>
+                    <Text style={{ alignSelf: "center", color: "#fff", fontWeight: "bold",fontFamily: "Poppins-Regular"  }}>
                         0$
                     </Text>
                 </View>
@@ -108,19 +108,19 @@ class Home extends React.Component {
                         Draw 678
                     </Text> */}
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('AddTicket')} style={styles.text}>
-                        <Text style={{ color: "#fff", fontSize: 20 }}>
+                        <Text style={{ color: "#fff", fontSize: 20,fontFamily: "Poppins-Regular"  }}>
                             Get a Ticket
                         </Text>
 
 
                     </TouchableOpacity>
-                    <Text style={{ fontSize: 13, justifyContent: "center", alignSelf: 'center', color: "#04a4df" }}>
+                    <Text style={{ fontSize: 13, justifyContent: "center", alignSelf: 'center', color: "#04a4df",fontFamily: "Poppins-Regular"  }}>
                         48 Ticket Avaliable
                     </Text>
 
 
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('MoreTicket')} style={{ alignSelf: "center", width: "40%", height: 30, borderColor: "#04a4df", borderWidth: 2, borderRadius: 10, justifyContent: "center", alignItems: "center" }}>
-                        <Text style={{ alignSelf: 'flex-end', textAlignVertical: "center", alignSelf: "center", color: '#04a4df' }}>
+                        <Text style={{ alignSelf: 'flex-end',fontFamily: "Poppins-Regular" , textAlignVertical: "center", alignSelf: "center", color: '#04a4df' }}>
                             Get more tickets
                         </Text>
                     </TouchableOpacity>
@@ -153,6 +153,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#04a4df',
         borderRadius: 10,
         width: "70%",
+        fontFamily: "Poppins-Regular" 
 
     },
 

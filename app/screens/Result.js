@@ -66,17 +66,17 @@ class Result extends React.Component {
                                         Array(6).fill().map((_, innerIndex) =>
 
                                             <ImageBackground key={innerIndex} source={require('../Assets/black.png')} style={{ margin: -10, width: 70, height: 70, justifyContent: "center" }} >
-                                                <Text style={{ color: "#fff", textAlign: 'center', fontSize: 25 }}>
+                                                <Text style={{ color: "#fff", textAlign: 'center', fontSize: 25,fontFamily: "Poppins-Regular" }}>
 
                                                     {winner.ticket.charAt(innerIndex)}
                                                 </Text>
                                             </ImageBackground>)
                                     }
                                 </View>
-                                <Text style={{ fontSize: 23, color: "#04a4df", fontWeight: "bold" }}>
+                                <Text style={{ fontSize: 23, color: "#04a4df", fontWeight: "bold",fontFamily: "Poppins-Regular"  }}>
                                     {winner.user.name}
                                 </Text>
-                                <Text style={{ fontSize: 15, color: "#04a4df" }}>
+                                <Text style={{ fontSize: 15, color: "#04a4df" ,fontFamily: "Poppins-Regular" }}>
                                     Prize:500$
                                 </Text>
                                 {/* <Text style={{ fontSize: 10, color: "#04a4df" }}>
@@ -110,7 +110,8 @@ const styles = StyleSheet.create({
         height: 43,
         backgroundColor: 'blue',
         borderRadius: 10,
-        width: "70%"
+        width: "70%",
+        fontFamily: "Poppins-Regular" 
     },
 
 

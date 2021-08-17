@@ -68,7 +68,7 @@ class Pay extends React.Component {
                     <View style={{ width: '100%',height:"90%",justifyContent:'space-evenly' }} >
                             <TouchableOpacity>
 
-                        <Text style={{alignItems: 'center',alignSelf: 'center',justifyContent: 'center',alignSelf: 'center',marginTop: 10,fontSize:30,color:"#fff",textDecorationLine:"underline"}} >
+                        <Text style={{alignItems: 'center',fontFamily: "Poppins-Regular" ,alignSelf: 'center',justifyContent: 'center',alignSelf: 'center',marginTop: 10,fontSize:30,color:"#fff",textDecorationLine:"underline"}} >
                            SECURE PAYMENT PAGE
                         </Text>
                             </TouchableOpacity>
@@ -76,7 +76,7 @@ class Pay extends React.Component {
                          
 
                          <TouchableOpacity onPress={() => this.addToReduc()} style={styles.text} >
-                            <Text style={{ color: 'white',textDecorationLine:"underline",fontSize:30 }}>Next</Text>
+                            <Text style={{ color: 'white',textDecorationLine:"underline",fontSize:30,fontFamily: "Poppins-Regular"  }}>Next</Text>
                         </TouchableOpacity>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
                           
@@ -99,6 +99,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 10,
         height: 43,
+        fontFamily: "Poppins-Regular" 
         
         
         
@@ -113,7 +114,8 @@ const styles = StyleSheet.create({
         height: 43,
         backgroundColor: '#fff',
         borderRadius: 3,
-        width: "90%"
+        width: "90%",
+        fontFamily: "Poppins-Regular" 
         
         
      
@@ -126,7 +128,7 @@ const styles = StyleSheet.create({
         borderColor: '#97aabd',
         borderWidth: 1,
         padding: 0, margin: 0,
-        fontFamily: 'Poppins',
+        fontFamily: "Poppins-Regular" ,
         marginTop: 20,
         // color: "#97AABD",
         alignSelf: 'center',
