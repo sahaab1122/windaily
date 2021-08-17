@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "11": "react-native run-ios --simulator='iPhone 11'",
     "android": "react-native run-android",
     "phone":"react-native run-android --deviceId=ce0317139aab5c6b0d",
     "ios": "react-native run-ios",
