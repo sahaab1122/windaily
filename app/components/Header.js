@@ -15,6 +15,7 @@ export default (props) => {
            <Ionicons name="arrow-back-sharp" size={30} color="white" />
          </TouchableOpacity>
            
+           
 
       </View>
     )
