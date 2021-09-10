@@ -77,7 +77,7 @@ class Ticket extends React.Component {
                                         Array(6).fill().map((_, innerIndex) =>
 
                                             <ImageBackground key={innerIndex} source={require('../Assets/black.png')} style={{ margin: -10, width: 69, height: 50, textAlign: "center", borderRadius: 20, textAlignVertical: "center", fontSize: 25, }} >
-                                                <Text style={{ color: "#fff", textAlign: 'center', textAlignVertical: "center", alignSelf: "center", marginTop: 12, fontSize: 25 }}>
+                                                <Text style={{ color: "#fff",fontFamily: "Poppins-Regular" , textAlign: 'center', textAlignVertical: "center", alignSelf: "center", marginTop: 12, fontSize: 25 }}>
 
                                                     {ticket.ticket.charAt(innerIndex)}
                                                 </Text>
@@ -114,7 +114,8 @@ const styles = StyleSheet.create({
         height: 43,
         backgroundColor: 'blue',
         borderRadius: 10,
-        width: "70%"
+        width: "70%",
+        fontFamily: "Poppins-Regular" 
     },
 
 

@@ -120,7 +120,7 @@ class AddTicket extends React.Component {
                             borderColor: 'white',
                         }}
                         textStyle={{
-
+                            fontFamily: "Poppins-Regular",
                             color: 'white',
                             fontSize: 30
 
@@ -137,7 +137,7 @@ class AddTicket extends React.Component {
 
 
 
-                    <Text style={{ color: "white" }}>
+                    <Text style={{ color: "white",fontFamily: "Poppins-Regular"  }}>
                         Add Ticket
                     </Text>
                 </TouchableOpacity>
@@ -161,7 +161,8 @@ const styles = StyleSheet.create({
         height: 43,
         backgroundColor: '#04a4df',
         borderRadius: 10,
-        width: "70%"
+        width: "70%",
+        fontFamily: "Poppins-Regular" 
     },
 
 

@@ -144,7 +144,7 @@ class Register extends React.Component {
                                 this.state.loading === true ? 
                                 <ActivityIndicator color="#fff" size="small" />
                                 :
-                            <Text style={{ color: 'white', fontSize:20 }}>Sign up</Text>
+                            <Text style={{ color: 'white', fontSize:20,fontFamily: "Poppins-Regular"  }}>Sign up</Text>
                          }
                         </TouchableOpacity>
                         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
@@ -173,7 +173,8 @@ const styles = StyleSheet.create({
         backgroundColor:"#04a4df",
         width:"60%",
         textAlignVertical:"center",
-        marginVertical:20
+        marginVertical:20,
+        fontFamily: "Poppins-Regular" 
         
         
         
@@ -187,12 +188,13 @@ const styles = StyleSheet.create({
         borderColor: '#97aabd',
         borderWidth: 1,
         padding: 0, margin: 0,
-        fontFamily: 'Poppins',
+        
         marginTop: 20,
         // color: "#97AABD",
         alignSelf: 'center',
         alignItems: 'flex-start',
         paddingHorizontal: 10,
+        fontFamily: "Poppins-Regular" 
     
 
     },
