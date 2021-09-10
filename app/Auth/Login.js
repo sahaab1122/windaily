@@ -88,7 +88,7 @@ class Login extends React.Component {
                     <View style={{ width: '100%',height:"80%" }} >
 
                         {/* <Inputfield text="Email" keyboardType="email-address" /> */}
-                        <Text style={{color:"white",paddingLeft:35,fontSize:20,flexGrow:0}}>
+                        <Text style={{color:"white",paddingLeft:35,fontSize:20,flexGrow:0,fontFamily:'Poppins-Black'}}>
                             Email
                         </Text>
                         <TextInput keyboardType={'email-address'} style={styles.inputfield} color="#000" placeholder="andy@gmail.com"  placeholderTextColor="#888"
@@ -96,7 +96,7 @@ class Login extends React.Component {
                             />
 
                         {/* <Inputfield text="Password" /> */}
-                        <Text style={{color:"white",paddingHorizontal:35,fontSize:20,paddingTop:10}}>
+                        <Text style={{color:"white",paddingHorizontal:35,fontSize:20,paddingTop:10,fontFamily:'Poppins-Black'}}>
                             Password
                         </Text>
                         <TextInput style={styles.inputfield} placeholder="******" color="#000" secureTextEntry={true}  placeholderTextColor="#888"
@@ -111,7 +111,7 @@ class Login extends React.Component {
                                 this.state.loading === true ? 
                                 <ActivityIndicator color="#fff" size="small" />
                                 :
-                                <Text style={{ color: '#fff',fontSize:20 }}>SIGN IN</Text> 
+                                <Text style={{ color: '#fff',fontSize:20,fontFamily:'Poppins-Black' }}>SIGN IN</Text> 
                                 
                             }
                         </TouchableOpacity>
@@ -123,11 +123,11 @@ class Login extends React.Component {
                         <View style={{flexDirection:"row",paddingHorizontal:40,paddingVertical:20}}>
                             
 
-                            <Text style={{color:"#04a4df",}}>
+                            <Text style={{color:"#04a4df",fontFamily:'Poppins-Black'}}>
                                 New to Win Daily? 
                             </Text>
                             <TouchableOpacity onPress={()=> this.props.navigation.navigate('Register')} style={{paddingHorizontal:10}}>
-                                <Text style={{color:"#04a4df",textDecorationLine:"underline"}}>
+                                <Text style={{color:"#04a4df",textDecorationLine:"underline",fontFamily:'Poppins-Black'}}>
                                     Sign Up
                                 </Text>
                             </TouchableOpacity>
@@ -158,7 +158,8 @@ const styles = StyleSheet.create({
         backgroundColor:"#04a4df",
         width:"60%",
         textAlignVertical:"center",
-        marginVertical:20
+        marginVertical:20,
+        fontFamily:'Poppins-Black'
        
         
     },
@@ -172,13 +173,14 @@ const styles = StyleSheet.create({
         paddingLeft:10,
         fontSize:15,
        
-        fontFamily: 'Poppins',
+    
         marginTop: 10,
         color: "#97AABD",
         alignSelf: 'center',
         alignItems: 'flex-start',
         paddingHorizontal: 0,
         paddingVertical:0,
+        fontFamily:'Poppins-Black'
 
 
 
