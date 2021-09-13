@@ -15,6 +15,7 @@
 		2C1AF57E2ADE4AC0B8FD22ED /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 753E7F8BEA1641B68D6E8699 /* Poppins-Light.ttf */; };
 		3464DBACA3B446CBA5B950D5 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2076AC2A06244B19A8E2C4F /* Poppins-ExtraLightItalic.ttf */; };
 		45EA9A2654614551BA6EC252 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92AB526C13954318ADFFC62D /* Poppins-BlackItalic.ttf */; };
+		52CB327926EC06DC00D4D4AB /* windailt.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 52CB327826EC06DC00D4D4AB /* windailt.storekit */; };
 		5DC79A1EA71C4F8096D19D58 /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 232222B75ED648D4903EFA3F /* Poppins-ExtraLight.ttf */; };
 		653AD74DC1424E398EB148FC /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A49BFA833E2840F1A7A2A8D7 /* Poppins-Thin.ttf */; };
 		685483D008964C1AB9FA7AEA /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EB1E7EF1FE4D4DA724D717 /* Poppins-Italic.ttf */; };
@@ -69,6 +70,7 @@
 		2E92449C6A844F23AEFF7BDD /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../app/Assets/fonts/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		3148D2CCD9C74F44A8FF881B /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../app/Assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
 		490044A28F9A4043BB9AA239 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		52CB327826EC06DC00D4D4AB /* windailt.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = windailt.storekit; sourceTree = "<group>"; };
 		52FE32349A508F82634E1686 /* libPods-WinDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		682CA1496D914391ADB3597B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		73FD33EB64E574F39A4F4C4D /* libPods-WinDaily-WinDailyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinDaily-WinDailyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +211,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				52CB327826EC06DC00D4D4AB /* windailt.storekit */,
 				13B07FAE1A68108700A75B9A /* WinDaily */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* WinDailyTests */,
@@ -357,6 +360,7 @@
 				9D4A9A8F912449C88605270E /* Poppins-SemiBoldItalic.ttf in Resources */,
 				653AD74DC1424E398EB148FC /* Poppins-Thin.ttf in Resources */,
 				A0B9779A7AE54B73828FCD88 /* Poppins-ThinItalic.ttf in Resources */,
+				52CB327926EC06DC00D4D4AB /* windailt.storekit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

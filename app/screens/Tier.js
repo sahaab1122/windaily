@@ -6,11 +6,22 @@ import { connect } from 'react-redux';
 import path from '../api/path';
 import api from '../api/api';
 import { set_tier } from '../store/actions/appAction';
+import * as RNIap from 'react-native-iap';
 
 
 // import api from '../api/api';
 // import path from '../api/path';
+const items = Platform.select({
+    ios: [
+        'Bronze',
+        'Silver',
+        'Gold'
 
+    ],
+    android: [
+        '1599'
+    ]
+});
 class Tier extends React.Component {
 
 
@@ -23,9 +34,7 @@ class Tier extends React.Component {
             // gold:"",
             loading: false,
             selectedValue: false,
-
-
-
+            tiers: []
         }
     }
     // valueSelect = async () => {
@@ -34,26 +43,80 @@ class Tier extends React.Component {
 
     //     }
 
+    buyEvent = async (item) => {
+        try {
+            // const result = await RNIap.clearTransactionIOS("1000000821206521")
+            const result = await RNIap.requestPurchase(item.productId)
+            console.log(result)
+            if (result?.transactionId) {
+                if (Platform.OS === 'ios') {
+                } else if (Platform.OS === 'android') {
+                    // If consumable (can be purchased again)
+                    // await RNIap.consumePurchaseAndroid(result.purchaseToken);
+                    // If not consumable
+                    // await RNIap.acknowledgePurchaseAndroid(result.purchaseToken);
+                }
+                await RNIap.finishTransaction(result, true);
+                this.props.hideModal()
+
+                if (Platform.OS === 'ios') {
+                    console.log(result, 'iap purchased')
+                    alert('Done')
+                }
+                else {
+                    console.log(result, "asdasd")
+                    alert('Done')
+                }
+            }
+            else {
+                alert('Payment Failed')
+            }
+            // alert(JSON.stringify(result))
+        }
+        catch (err) {
+            console.log(err)
+        }
+    }
+    initRNIAP = async () => {
+        try {
+            await RNIap.initConnection()
+                .then(() => {
+                    RNIap.getSubscriptions(items).then((products) => {
+                        this.setState({ tiers: products })
+
+                    }).catch((error) => {
+                        console.log(error.message);
+                        console.log(error, "here is the error")
+                        alert(error.message)
+                    })
+                })
+        } catch (err) {
+            console.debug('initConnection');
+            console.error("INIT IAP ERROR IS", err, err.code, err.message);
+            // Alert.alert(ENV.language['fail to get in-app-purchase information']);
+        }
+    }
 
 
 
 
 
     selectedValue = async () => {
-
         let type = {
             "user": this.props.user._id,
             selectedValue: this.state.selectedValue
         }
         let res = await api(path.tier, "post", type)
         if (res.success === true) {
-             this.props.set_tier(true)
+            this.props.set_tier(true)
         }
-        
+
 
 
     }
-
+    componentDidMount() {
+        this.initRNIAP()
+    }
     render() {
         console.log(this.props.tier, "tier")
         const { navigation } = this.props
@@ -70,32 +133,17 @@ class Tier extends React.Component {
 
                     <View style={{ width: '100%', height: "90%" }} >
 
-                        <Text style={{ alignItems: 'center', fontFamily: "Poppins-Regular" ,alignSelf: 'flex-end', justifyContent: 'center', alignSelf: 'center', marginTop: 10, height: 43, fontSize: 30, color: "#fff", textDecorationLine: "underline" }} >
+                        <Text style={{ alignItems: 'center', fontFamily: "Poppins-Regular", alignSelf: 'flex-end', justifyContent: 'center', alignSelf: 'center', marginTop: 10, height: 43, fontSize: 30, color: "#fff", textDecorationLine: "underline" }} >
                             TIER SELECTION
                         </Text>
-                        <TouchableOpacity style={styles.text1} onPress={() => this.setState({ selectedValue: "free" })} >
-                            <Text style={{ color: '#000', fontSize: 20,fontFamily: "Poppins-Regular"  }}>FREE</Text>
+                        <TouchableOpacity style={styles.text1} onPress={() => this.props.hideModal()} >
+                            <Text style={{ color: '#000', fontSize: 20, fontFamily: "Poppins-Regular" }}>FREE</Text>
                         </TouchableOpacity>
-
-                        <TouchableOpacity onPress={() => this.setState({ selectedValue: "bronze" })} style={styles.text1} >
-                            <Text style={{ color: '#000', fontSize: 20,fontFamily: "Poppins-Regular"  }}>BRONZE</Text>
-                        </TouchableOpacity>
-                        <TouchableOpacity onPress={() => this.setState({ selectedValue: "silver" })} style={styles.text1} >
-                            <Text style={{ color: '#000', fontSize: 20,fontFamily: "Poppins-Regular"  }}>SILVER</Text>
-                        </TouchableOpacity>
-
-
-                        <TouchableOpacity onPress={() => this.setState({ selectedValue: "gold" })} style={styles.text1} >
-                            <Text style={{ color: '#000', fontSize: 20,fontFamily: "Poppins-Regular"  }}>GOLD</Text>
-                        </TouchableOpacity>
-
-
-
-                        <TouchableOpacity onPress={() => this.selectedValue()} style={styles.text} >
-
-                            <Text style={{ color: 'white', textDecorationLine: "underline", fontSize: 30,fontFamily: "Poppins-Regular"  }}>Next</Text>
-
-                        </TouchableOpacity>
+                        {this.state.tiers?.map((item, index) =>
+                        (<TouchableOpacity onPress={() => this.setState({ selectedValue: item.title }, () => this.buyEvent(item))} style={styles.text1} >
+                            <Text style={{ color: '#000', fontSize: 20, fontFamily: "Poppins-Regular" }}>{item.title}</Text>
+                        </TouchableOpacity>)
+                        )}
                         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>
 
                         </View>
@@ -117,7 +165,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         marginTop: 10,
         height: 43,
-        fontFamily: "Poppins-Regular" 
+        fontFamily: "Poppins-Regular"
 
 
 
@@ -133,7 +181,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         borderRadius: 3,
         width: "90%",
-        fontFamily: "Poppins-Regular" 
+        fontFamily: "Poppins-Regular"
 
 
 
@@ -146,7 +194,7 @@ const styles = StyleSheet.create({
         borderColor: '#97aabd',
         borderWidth: 1,
         padding: 0, margin: 0,
-        fontFamily: "Poppins-Regular" ,
+        fontFamily: "Poppins-Regular",
         marginTop: 20,
         // color: "#97AABD",
         alignSelf: 'center',

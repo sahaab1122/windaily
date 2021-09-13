@@ -13,7 +13,7 @@ class Wrapper extends Component {
     }
     render() {
         return (
-            <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={{ flex: 1, }} >
+            <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={{ flex: 1 }}>
                 {/* <ImageBackground source={require('../assets/backWhite.png')} resizeMode='stretch' style={{ width: '100%', height: heightPercentageToDP('100%'), position: 'absolute' }} /> */}
 
                 <LinearGradient colors={['#04a4df',  '#fff']} style={{ flex: 1,width:"100%" }}>
@@ -25,8 +25,7 @@ class Wrapper extends Component {
                     {
                         this.props.children
                     }
-                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Setting')} style={{ position: "absolute", top: 10, right: 10 }}>
-
+                    <TouchableOpacity onPress={() => this.props.navigation.navigate('Setting')} style={{ position: "absolute", top: 40, right: 10 }}>
                         <AntDesign name="setting" size={30} color={"#fff"} />
                     </TouchableOpacity>
 

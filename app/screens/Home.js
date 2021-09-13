@@ -28,6 +28,7 @@ class Home extends React.Component {
         super(props);
         this.state = {
             image: "",
+            modalState: true,
             size: { width, height }, modalVisible: false
         }
     }
@@ -61,7 +62,7 @@ class Home extends React.Component {
 
     render() {
         console.log(this.props.tier, "tierrrr")
- 
+
         const { navigation } = this.props
 
         return (
@@ -69,10 +70,10 @@ class Home extends React.Component {
             <Wrapper navigation={navigation} onLayout={this._onLayoutDidChange} >
                 <View style={{ position: "absolute", alignSelf: "center", justifyContent: "center", paddingVertical: 9 }}>
 
-                    <Text style={{ color: "#fff", fontSize: 15, fontWeight: 'bold',fontFamily: "Poppins-Regular"  }}>
+                    <Text style={{ color: "#fff", fontSize: 15, fontWeight: 'bold', fontFamily: "Poppins-Regular" }}>
                         Balance
                     </Text>
-                    <Text style={{ alignSelf: "center", color: "#fff", fontWeight: "bold",fontFamily: "Poppins-Regular"  }}>
+                    <Text style={{ alignSelf: "center", color: "#fff", fontWeight: "bold", fontFamily: "Poppins-Regular" }}>
                         0$
                     </Text>
                 </View>
@@ -82,7 +83,7 @@ class Home extends React.Component {
                     style={{ width: "90%", height: 200, alignSelf: "center" }}
                     autoplay
                     pageInfo
-                
+
                 >
                     {/* {
                             this.props.items.map((item, index) =>
@@ -92,10 +93,9 @@ class Home extends React.Component {
                         } */}
                     {this.props.prizes.length < 1 ?
                         <Image source={require("../Assets/amazon15.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image>
-
                         :
                         this.props.prizes.map((prize, index) =>
-                            <Image source={{ uri: prize.image[0] }} key={index} style={{ height: 200, width: widthPercentageToDP(90)  }}></Image>
+                            <Image source={{ uri: prize.image[0] }} key={index} style={{ height: 200, width: widthPercentageToDP(90) }}></Image>
                         )}
                     {/* <Image source={require("../Assets/amazon25.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
                     {/* <Image source={require("../Assets/amazon50.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
@@ -108,19 +108,19 @@ class Home extends React.Component {
                         Draw 678
                     </Text> */}
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('AddTicket')} style={styles.text}>
-                        <Text style={{ color: "#fff", fontSize: 20,fontFamily: "Poppins-Regular"  }}>
+                        <Text style={{ color: "#fff", fontSize: 20, fontFamily: "Poppins-Regular" }}>
                             Get a Ticket
                         </Text>
 
 
                     </TouchableOpacity>
-                    <Text style={{ fontSize: 13, justifyContent: "center", alignSelf: 'center', color: "#04a4df",fontFamily: "Poppins-Regular"  }}>
+                    <Text style={{ fontSize: 13, justifyContent: "center", alignSelf: 'center', color: "#04a4df", fontFamily: "Poppins-Regular" }}>
                         48 Ticket Avaliable
                     </Text>
 
 
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('MoreTicket')} style={{ alignSelf: "center", width: "40%", height: 30, borderColor: "#04a4df", borderWidth: 2, borderRadius: 10, justifyContent: "center", alignItems: "center" }}>
-                        <Text style={{ alignSelf: 'flex-end',fontFamily: "Poppins-Regular" , textAlignVertical: "center", alignSelf: "center", color: '#04a4df' }}>
+                        <Text style={{ alignSelf: 'flex-end', fontFamily: "Poppins-Regular", textAlignVertical: "center", alignSelf: "center", color: '#04a4df' }}>
                             Get more tickets
                         </Text>
                     </TouchableOpacity>
@@ -128,8 +128,8 @@ class Home extends React.Component {
                 </View>
                 {
                     this.props.tier === false &&
-                    <Modal visible={true} animationType='slide' >
-                        <Tier navigation={this.props.navigation} />
+                    <Modal visible={this.state.modalState} animationType='slide' >
+                        <Tier hideModal={() => this.setState({ modalState: !this.state.modalState })} navigation={this.props.navigation} />
                     </Modal>
                 }
 
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#04a4df',
         borderRadius: 10,
         width: "70%",
-        fontFamily: "Poppins-Regular" 
+        fontFamily: "Poppins-Regular"
 
     },
 

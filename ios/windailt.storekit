@@ -1,0 +1,116 @@
+{
+  "identifier" : "8669F746",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "829D96B8",
+      "localizations" : [
+
+      ],
+      "name" : "1",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "3",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "42ACAB32",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "# Daily tickets and 25$ amazon gift card ",
+              "displayName" : "Bronze",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "Bronze",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Bronze",
+          "subscriptionGroupID" : "829D96B8",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    },
+    {
+      "id" : "3F8E8CB7",
+      "localizations" : [
+
+      ],
+      "name" : "2",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "5",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "5B5D1E21",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "5 daily tickets and 50$ amazon gift card",
+              "displayName" : "Silver",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "Silver",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Silver",
+          "subscriptionGroupID" : "3F8E8CB7",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    },
+    {
+      "id" : "E01D04F8",
+      "localizations" : [
+
+      ],
+      "name" : "3",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "10",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "FD3CF4E7",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "10 tickets every day and 100$ amazon card",
+              "displayName" : "Gold",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "10 tickets every day with 100$ gift card",
+              "displayName" : "Gold",
+              "locale" : "ar"
+            }
+          ],
+          "productID" : "Gold",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Gold",
+          "subscriptionGroupID" : "E01D04F8",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}
