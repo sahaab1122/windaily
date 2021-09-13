@@ -6,6 +6,7 @@ import { createStackNavigator, TransitionPresets } from '@react-navigation/stack
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Splash from './app/Auth/Splash';
 import Login from './app/Auth/Login'
+import socket from './app/Auth/socket'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import EvilIcons from 'react-native-vector-icons/EvilIcons'
 import Entypo from 'react-native-vector-icons/Entypo'
@@ -24,6 +25,7 @@ import Result from './app/screens/Result';
 import MoreTicket from './app/screens/MoreTicket';
 import Wheel from './app/screens/Wheel';
 import { connect } from 'react-redux';
+// import { Socket } from 'socket.io-client';
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -48,6 +50,7 @@ class AppNavigator extends React.Component {
             {/* <Stack.Screen name="Tier" component={Tier} options={{ title: '' }} /> */}
             <Stack.Screen name="Pay" component={Pay} options={{ title: '' }} />
             <Stack.Screen name="Login" component={Login} options={{ title: '' }} />
+            <Stack.Screen name="socket" component={socket} options={{ title: '' }} />
             <Stack.Screen name="Register" component={Register} options={{ title: '' }} />
           </Stack.Navigator>
         )
