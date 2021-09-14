@@ -16,7 +16,7 @@ const appReducer = (state = initialState, action) => {
                 items: action.payload,
             }
         }
-        case "set_tier": {
+        case SET_TIER: {
             return {
                 ...state,
                 tier: action.payload,
