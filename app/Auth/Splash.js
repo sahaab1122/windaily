@@ -15,7 +15,7 @@ class Splash extends Component {
   }
   componentDidMount = async () => {
     setTimeout(() => {
-        this.props.navigation.navigate('socket');
+        this.props.navigation.navigate('Login');
     }, 2000);
   };
 

@@ -15,7 +15,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign'
 import Entypo from 'react-native-vector-icons/Entypo'
 import { Carousal } from '../components/Carousel';
 import LinearGradient from 'react-native-linear-gradient';
-
+import { Linking } from 'react-native';
 
 
 
@@ -39,7 +39,7 @@ class Setting extends React.Component {
      <LinearGradient colors={['#04a4df',  '#fff']} style={{backgroundColor:"#04a4df",width:"100%",height:"100%",justifyContent:"space-evenly"}}>
 
 
-         <TouchableOpacity style={styles.text}>
+         <TouchableOpacity  onPress={() => Linking.openURL('mailto:windailybiz@gmail.com?subject=Subject=Description') } style={styles.text}>
             <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
                 Contact us
             </Text>
@@ -49,12 +49,12 @@ class Setting extends React.Component {
                 Rate us
             </Text>
          </TouchableOpacity>
-         <TouchableOpacity style={styles.text}>
+         <TouchableOpacity onPress={()=> this.props.navigation.navigate('Privacypolicy')} style={styles.text}>
             <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
                  Privacy Policy
             </Text>
          </TouchableOpacity>
-         <TouchableOpacity style={styles.text}>
+         <TouchableOpacity onPress={()=> this.props.navigation.navigate('Termscondition')} style={styles.text}>
             <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
                 Terms Condition
             </Text>
