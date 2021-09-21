@@ -82,6 +82,7 @@ class Setting extends React.Component {
                 Withdraw your Balance
             </Text>
          </TouchableOpacity>
+         
      </LinearGradient>
 
         )
