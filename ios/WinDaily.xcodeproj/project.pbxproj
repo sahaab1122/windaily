@@ -11,7 +11,6 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		16E596FC7A4A4C62EED7AA0F /* libPods-WinDaily-WinDailyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73FD33EB64E574F39A4F4C4D /* libPods-WinDaily-WinDailyTests.a */; };
 		2C1AF57E2ADE4AC0B8FD22ED /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 753E7F8BEA1641B68D6E8699 /* Poppins-Light.ttf */; };
 		3464DBACA3B446CBA5B950D5 /* Poppins-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2076AC2A06244B19A8E2C4F /* Poppins-ExtraLightItalic.ttf */; };
 		45EA9A2654614551BA6EC252 /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92AB526C13954318ADFFC62D /* Poppins-BlackItalic.ttf */; };
@@ -20,16 +19,17 @@
 		653AD74DC1424E398EB148FC /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A49BFA833E2840F1A7A2A8D7 /* Poppins-Thin.ttf */; };
 		685483D008964C1AB9FA7AEA /* Poppins-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E6EB1E7EF1FE4D4DA724D717 /* Poppins-Italic.ttf */; };
 		696D79218122420C8C7CC35F /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B71DAD1632CA4278BC3522B6 /* Poppins-Medium.ttf */; };
-		80BD14ECCB829E6B1B62168E /* libPods-WinDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FE32349A508F82634E1686 /* libPods-WinDaily.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		9D4A9A8F912449C88605270E /* Poppins-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA8524643DA04C99A0219166 /* Poppins-SemiBoldItalic.ttf */; };
 		A0B9779A7AE54B73828FCD88 /* Poppins-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BC61DB021764F13AFC26337 /* Poppins-ThinItalic.ttf */; };
 		A583F60D25B94668B3AB0B4C /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3148D2CCD9C74F44A8FF881B /* Poppins-Black.ttf */; };
 		AC92779122754852AF568C04 /* Poppins-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1BE762012FC3498DA8572B43 /* Poppins-LightItalic.ttf */; };
+		B00A687733A14D0AE4300DD0 /* libPods-WinDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FFAAC99FDFD39F840EBDA58 /* libPods-WinDaily.a */; };
 		B5F2AC6AA04F4BA9A1ACB327 /* Poppins-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D36404A9A414165ABE16CD2 /* Poppins-BoldItalic.ttf */; };
 		C31012627DE447FA9F4A7EA5 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3CD7247E87E413D8ED0F31A /* Poppins-SemiBold.ttf */; };
 		CAE667479FD643A3A61ADB56 /* Poppins-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E92449C6A844F23AEFF7BDD /* Poppins-ExtraBoldItalic.ttf */; };
 		D96F481B510C4CD2845FF502 /* Poppins-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 92E5FA4051DC442C8C377AE3 /* Poppins-MediumItalic.ttf */; };
+		ECE1430081C54349456D753A /* libPods-WinDaily-WinDailyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5D6A4B5D2E928D397FB6F9 /* libPods-WinDaily-WinDailyTests.a */; };
 		EF0BCCD1FDB149EEA8C547E1 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F917869058C54355BFFDD30A /* Poppins-Bold.ttf */; };
 		F4287A224E1946BFA1F2EC6A /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2BAC997D8E9A4460AF54F7BB /* Poppins-Regular.ttf */; };
 		F6A9239AD8CB4D66982A25F4 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10AB6432DD6D40B5A18BD7AB /* Poppins-ExtraBold.ttf */; };
@@ -50,6 +50,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* WinDailyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WinDailyTests.m; sourceTree = "<group>"; };
 		096F6B1D1DC04305833CBC3F /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		0C5D6A4B5D2E928D397FB6F9 /* libPods-WinDaily-WinDailyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinDaily-WinDailyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C64B9DED58249CBAA3A76BC /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		0CF141BBE87F46C89B12F7D3 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		10AB6432DD6D40B5A18BD7AB /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../app/Assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
@@ -64,16 +65,17 @@
 		232222B75ED648D4903EFA3F /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLight.ttf"; path = "../app/Assets/fonts/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
 		2363A2CEB0D84AFE8B4DB61E /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		28BFE77B8DAF421E968ED804 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
-		2962AF2DDF196682563BB5E1 /* Pods-WinDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinDaily.debug.xcconfig"; path = "Target Support Files/Pods-WinDaily/Pods-WinDaily.debug.xcconfig"; sourceTree = "<group>"; };
+		296737379BE35164659F74DA /* Pods-WinDaily.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinDaily.debug.xcconfig"; path = "Target Support Files/Pods-WinDaily/Pods-WinDaily.debug.xcconfig"; sourceTree = "<group>"; };
 		2AA97740DD44418BAEAD5249 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		2BAC997D8E9A4460AF54F7BB /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../app/Assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		2E92449C6A844F23AEFF7BDD /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBoldItalic.ttf"; path = "../app/Assets/fonts/Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		3148D2CCD9C74F44A8FF881B /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../app/Assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
 		490044A28F9A4043BB9AA239 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		52CB327826EC06DC00D4D4AB /* windailt.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = windailt.storekit; sourceTree = "<group>"; };
-		52FE32349A508F82634E1686 /* libPods-WinDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6821A637A72AB75B5E234C3C /* Pods-WinDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinDaily.release.xcconfig"; path = "Target Support Files/Pods-WinDaily/Pods-WinDaily.release.xcconfig"; sourceTree = "<group>"; };
 		682CA1496D914391ADB3597B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		73FD33EB64E574F39A4F4C4D /* libPods-WinDaily-WinDailyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinDaily-WinDailyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68A9D4FD9D753584A499A3D9 /* Pods-WinDaily-WinDailyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinDaily-WinDailyTests.release.xcconfig"; path = "Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests.release.xcconfig"; sourceTree = "<group>"; };
+		6FFAAC99FDFD39F840EBDA58 /* libPods-WinDaily.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WinDaily.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		753E7F8BEA1641B68D6E8699 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../app/Assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
 		7C57C4D2C82844549B29F5F8 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = WinDaily/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,10 +85,8 @@
 		A2076AC2A06244B19A8E2C4F /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraLightItalic.ttf"; path = "../app/Assets/fonts/Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		A49BFA833E2840F1A7A2A8D7 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../app/Assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		B71DAD1632CA4278BC3522B6 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../app/Assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
-		B8A7FA6A49D7D8E22C908A38 /* Pods-WinDaily.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinDaily.release.xcconfig"; path = "Target Support Files/Pods-WinDaily/Pods-WinDaily.release.xcconfig"; sourceTree = "<group>"; };
 		C6AFB9FE8CBF4B02AD4E3C51 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		C6EA4D1DDBC89276CEEBCD0F /* Pods-WinDaily-WinDailyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinDaily-WinDailyTests.debug.xcconfig"; path = "Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C932A23F9036C33BE0FC54A6 /* Pods-WinDaily-WinDailyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinDaily-WinDailyTests.release.xcconfig"; path = "Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC0B84472BED5EA35352484B /* Pods-WinDaily-WinDailyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WinDaily-WinDailyTests.debug.xcconfig"; path = "Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D35BEBE81E1F498582648D33 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		E6EB1E7EF1FE4D4DA724D717 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Italic.ttf"; path = "../app/Assets/fonts/Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		EA8524643DA04C99A0219166 /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBoldItalic.ttf"; path = "../app/Assets/fonts/Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16E596FC7A4A4C62EED7AA0F /* libPods-WinDaily-WinDailyTests.a in Frameworks */,
+				ECE1430081C54349456D753A /* libPods-WinDaily-WinDailyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80BD14ECCB829E6B1B62168E /* libPods-WinDaily.a in Frameworks */,
+				B00A687733A14D0AE4300DD0 /* libPods-WinDaily.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,8 +195,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				52FE32349A508F82634E1686 /* libPods-WinDaily.a */,
-				73FD33EB64E574F39A4F4C4D /* libPods-WinDaily-WinDailyTests.a */,
+				6FFAAC99FDFD39F840EBDA58 /* libPods-WinDaily.a */,
+				0C5D6A4B5D2E928D397FB6F9 /* libPods-WinDaily-WinDailyTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -237,10 +237,10 @@
 		BCE526772262892475AB1F6C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2962AF2DDF196682563BB5E1 /* Pods-WinDaily.debug.xcconfig */,
-				B8A7FA6A49D7D8E22C908A38 /* Pods-WinDaily.release.xcconfig */,
-				C6EA4D1DDBC89276CEEBCD0F /* Pods-WinDaily-WinDailyTests.debug.xcconfig */,
-				C932A23F9036C33BE0FC54A6 /* Pods-WinDaily-WinDailyTests.release.xcconfig */,
+				296737379BE35164659F74DA /* Pods-WinDaily.debug.xcconfig */,
+				6821A637A72AB75B5E234C3C /* Pods-WinDaily.release.xcconfig */,
+				CC0B84472BED5EA35352484B /* Pods-WinDaily-WinDailyTests.debug.xcconfig */,
+				68A9D4FD9D753584A499A3D9 /* Pods-WinDaily-WinDailyTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -252,12 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WinDailyTests" */;
 			buildPhases = (
-				353A334783D6A8392318715E /* [CP] Check Pods Manifest.lock */,
+				49589730BC1A8C81A2CD5126 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				16B4CA804FBEAA704405167D /* [CP] Embed Pods Frameworks */,
-				1EB58CA2FB1E8E7138D24010 /* [CP] Copy Pods Resources */,
+				651AC654653156D55733075B /* [CP] Embed Pods Frameworks */,
+				E937706A1119D2DF15DC56E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,15 +273,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WinDaily" */;
 			buildPhases = (
-				93CDFA4F3D267197AEF0A1B8 /* [CP] Check Pods Manifest.lock */,
+				05A80A29449027A9A9D287FD /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				F604431667E15CEE7299821A /* [CP] Embed Pods Frameworks */,
-				914BF9CC92326BA76BD4B69E /* [CP] Copy Pods Resources */,
-				997B38202936BBB342A01FD8 /* [CP-User] [RNFB] Core Configuration */,
+				588A8E863A1DC39972C35453 /* [CP] Embed Pods Frameworks */,
+				249DFD67D51B45CE08DEFC4F /* [CP] Copy Pods Resources */,
+				89E3306403484C4707CCFE83 /* [CP-User] [RNFB] Core Configuration */,
 			);
 			buildRules = (
 			);
@@ -381,80 +381,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		16B4CA804FBEAA704405167D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1EB58CA2FB1E8E7138D24010 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		353A334783D6A8392318715E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WinDaily-WinDailyTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		914BF9CC92326BA76BD4B69E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WinDaily/Pods-WinDaily-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WinDaily/Pods-WinDaily-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WinDaily/Pods-WinDaily-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		93CDFA4F3D267197AEF0A1B8 /* [CP] Check Pods Manifest.lock */ = {
+		05A80A29449027A9A9D287FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -476,20 +403,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		997B38202936BBB342A01FD8 /* [CP-User] [RNFB] Core Configuration */ = {
+		249DFD67D51B45CE08DEFC4F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WinDaily/Pods-WinDaily-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP-User] [RNFB] Core Configuration";
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WinDaily/Pods-WinDaily-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    _JSON_OUTPUT_BASE64=$(python -c 'import json,sys,base64;print(base64.b64encode(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"').read())['${_JSON_ROOT}'])))' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WinDaily/Pods-WinDaily-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		F604431667E15CEE7299821A /* [CP] Embed Pods Frameworks */ = {
+		49589730BC1A8C81A2CD5126 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WinDaily-WinDailyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		588A8E863A1DC39972C35453 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -504,6 +457,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WinDaily/Pods-WinDaily-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		651AC654653156D55733075B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E3306403484C4707CCFE83 /* [CP-User] [RNFB] Core Configuration */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "[CP-User] [RNFB] Core Configuration";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/usr/bin/env bash\n#\n# Copyright (c) 2016-present Invertase Limited & Contributors\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this library except in compliance with the License.\n# You may obtain a copy of the License at\n#\n#   http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\nset -e\n\n_MAX_LOOKUPS=2;\n_SEARCH_RESULT=''\n_RN_ROOT_EXISTS=''\n_CURRENT_LOOKUPS=1\n_JSON_ROOT=\"'react-native'\"\n_JSON_FILE_NAME='firebase.json'\n_JSON_OUTPUT_BASE64='e30=' # { }\n_CURRENT_SEARCH_DIR=${PROJECT_DIR}\n_PLIST_BUDDY=/usr/libexec/PlistBuddy\n_TARGET_PLIST=\"${BUILT_PRODUCTS_DIR}/${INFOPLIST_PATH}\"\n_DSYM_PLIST=\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist\"\n\n# plist arrays\n_PLIST_ENTRY_KEYS=()\n_PLIST_ENTRY_TYPES=()\n_PLIST_ENTRY_VALUES=()\n\nfunction setPlistValue {\n  echo \"info:      setting plist entry '$1' of type '$2' in file '$4'\"\n  ${_PLIST_BUDDY} -c \"Add :$1 $2 '$3'\" $4 || echo \"info:      '$1' already exists\"\n}\n\nfunction getFirebaseJsonKeyValue () {\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$1'); puts output[$_JSON_ROOT]['$2']\"\n  else\n    echo \"\"\n  fi;\n}\n\nfunction jsonBoolToYesNo () {\n  if [[ $1 == \"false\" ]]; then\n    echo \"NO\"\n  elif [[ $1 == \"true\" ]]; then\n    echo \"YES\"\n  else echo \"NO\"\n  fi\n}\n\necho \"info: -> RNFB build script started\"\necho \"info: 1) Locating ${_JSON_FILE_NAME} file:\"\n\nif [[ -z ${_CURRENT_SEARCH_DIR} ]]; then\n  _CURRENT_SEARCH_DIR=$(pwd)\nfi;\n\nwhile true; do\n  _CURRENT_SEARCH_DIR=$(dirname \"$_CURRENT_SEARCH_DIR\")\n  if [[ \"$_CURRENT_SEARCH_DIR\" == \"/\" ]] || [[ ${_CURRENT_LOOKUPS} -gt ${_MAX_LOOKUPS} ]]; then break; fi;\n  echo \"info:      ($_CURRENT_LOOKUPS of $_MAX_LOOKUPS) Searching in '$_CURRENT_SEARCH_DIR' for a ${_JSON_FILE_NAME} file.\"\n  _SEARCH_RESULT=$(find \"$_CURRENT_SEARCH_DIR\" -maxdepth 2 -name ${_JSON_FILE_NAME} -print | head -n 1)\n  if [[ ${_SEARCH_RESULT} ]]; then\n    echo \"info:      ${_JSON_FILE_NAME} found at $_SEARCH_RESULT\"\n    break;\n  fi;\n  _CURRENT_LOOKUPS=$((_CURRENT_LOOKUPS+1))\ndone\n\nif [[ ${_SEARCH_RESULT} ]]; then\n  _JSON_OUTPUT_RAW=$(cat \"${_SEARCH_RESULT}\")\n  _RN_ROOT_EXISTS=$(ruby -e \"require 'rubygems';require 'json'; output=JSON.parse('$_JSON_OUTPUT_RAW'); puts output[$_JSON_ROOT]\" || echo '')\n\n  if [[ ${_RN_ROOT_EXISTS} ]]; then\n    _JSON_OUTPUT_BASE64=$(python -c 'import json,sys,base64;print(base64.b64encode(json.dumps(json.loads(open('\"'${_SEARCH_RESULT}'\"').read())['${_JSON_ROOT}'])))' || echo \"e30=\")\n  fi\n\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n\n  # config.app_data_collection_default_enabled\n  _APP_DATA_COLLECTION_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_data_collection_default_enabled\")\n  if [[ $_APP_DATA_COLLECTION_ENABLED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseDataCollectionDefaultEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_DATA_COLLECTION_ENABLED\")\")\n  fi\n\n  # config.analytics_auto_collection_enabled\n  _ANALYTICS_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_auto_collection_enabled\")\n  if [[ $_ANALYTICS_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_AUTO_COLLECTION\")\")\n  fi\n\n  # config.analytics_collection_deactivated\n  _ANALYTICS_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_collection_deactivated\")\n  if [[ $_ANALYTICS_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FIREBASE_ANALYTICS_COLLECTION_DEACTIVATED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_DEACTIVATED\")\")\n  fi\n\n  # config.analytics_idfv_collection_enabled\n  _ANALYTICS_IDFV_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_idfv_collection_enabled\")\n  if [[ $_ANALYTICS_IDFV_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_IDFV_COLLECTION_ENABLED\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_IDFV_COLLECTION\")\")\n  fi\n\n  # config.analytics_default_allow_ad_personalization_signals\n  _ANALYTICS_PERSONALIZATION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"analytics_default_allow_ad_personalization_signals\")\n  if [[ $_ANALYTICS_PERSONALIZATION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"GOOGLE_ANALYTICS_DEFAULT_ALLOW_AD_PERSONALIZATION_SIGNALS\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_ANALYTICS_PERSONALIZATION\")\")\n  fi\n\n  # config.perf_auto_collection_enabled\n  _PERF_AUTO_COLLECTION=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_auto_collection_enabled\")\n  if [[ $_PERF_AUTO_COLLECTION ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_enabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_AUTO_COLLECTION\")\")\n  fi\n\n  # config.perf_collection_deactivated\n  _PERF_DEACTIVATED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"perf_collection_deactivated\")\n  if [[ $_PERF_DEACTIVATED ]]; then\n    _PLIST_ENTRY_KEYS+=(\"firebase_performance_collection_deactivated\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_PERF_DEACTIVATED\")\")\n  fi\n\n  # config.messaging_auto_init_enabled\n  _MESSAGING_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"messaging_auto_init_enabled\")\n  if [[ $_MESSAGING_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseMessagingAutoInitEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_MESSAGING_AUTO_INIT\")\")\n  fi\n\n  # config.in_app_messaging_auto_colllection_enabled\n  _FIAM_AUTO_INIT=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"in_app_messaging_auto_collection_enabled\")\n  if [[ $_FIAM_AUTO_INIT ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseInAppMessagingAutomaticDataCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_FIAM_AUTO_INIT\")\")\n  fi\n\n  # config.app_check_token_auto_refresh\n  _APP_CHECK_TOKEN_AUTO_REFRESH=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"app_check_token_auto_refresh\")\n  if [[ $_APP_CHECK_TOKEN_AUTO_REFRESH ]]; then\n    _PLIST_ENTRY_KEYS+=(\"FirebaseAppCheckTokenAutoRefreshEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"$(jsonBoolToYesNo \"$_APP_CHECK_TOKEN_AUTO_REFRESH\")\")\n  fi\n\n  # config.crashlytics_disable_auto_disabler - undocumented for now - mainly for debugging, document if becomes useful\n  _CRASHLYTICS_AUTO_DISABLE_ENABLED=$(getFirebaseJsonKeyValue \"$_JSON_OUTPUT_RAW\" \"crashlytics_disable_auto_disabler\")\n  if [[ $_CRASHLYTICS_AUTO_DISABLE_ENABLED == \"true\" ]]; then\n    echo \"Disabled Crashlytics auto disabler.\" # do nothing\n  else\n    _PLIST_ENTRY_KEYS+=(\"FirebaseCrashlyticsCollectionEnabled\")\n    _PLIST_ENTRY_TYPES+=(\"bool\")\n    _PLIST_ENTRY_VALUES+=(\"NO\")\n  fi\nelse\n  _PLIST_ENTRY_KEYS+=(\"firebase_json_raw\")\n  _PLIST_ENTRY_TYPES+=(\"string\")\n  _PLIST_ENTRY_VALUES+=(\"$_JSON_OUTPUT_BASE64\")\n  echo \"warning:   A firebase.json file was not found, whilst this file is optional it is recommended to include it to configure firebase services in React Native Firebase.\"\nfi;\n\necho \"info: 2) Injecting Info.plist entries: \"\n\n# Log out the keys we're adding\nfor i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n  echo \"    ->  $i) ${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\"\ndone\n\nfor plist in \"${_TARGET_PLIST}\" \"${_DSYM_PLIST}\" ; do\n  if [[ -f \"${plist}\" ]]; then\n\n    # paths with spaces break the call to setPlistValue. temporarily modify\n    # the shell internal field separator variable (IFS), which normally\n    # includes spaces, to consist only of line breaks\n    oldifs=$IFS\n    IFS=\"\n\"\n\n    for i in \"${!_PLIST_ENTRY_KEYS[@]}\"; do\n      setPlistValue \"${_PLIST_ENTRY_KEYS[$i]}\" \"${_PLIST_ENTRY_TYPES[$i]}\" \"${_PLIST_ENTRY_VALUES[$i]}\" \"${plist}\"\n    done\n\n    # restore the original internal field separator value\n    IFS=$oldifs\n  else\n    echo \"warning:   A Info.plist build output file was not found (${plist})\"\n  fi\ndone\n\necho \"info: <- RNFB build script finished\"\n";
+		};
+		E937706A1119D2DF15DC56E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WinDaily-WinDailyTests/Pods-WinDaily-WinDailyTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -558,7 +558,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6EA4D1DDBC89276CEEBCD0F /* Pods-WinDaily-WinDailyTests.debug.xcconfig */;
+			baseConfigurationReference = CC0B84472BED5EA35352484B /* Pods-WinDaily-WinDailyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -585,7 +585,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C932A23F9036C33BE0FC54A6 /* Pods-WinDaily-WinDailyTests.release.xcconfig */;
+			baseConfigurationReference = 68A9D4FD9D753584A499A3D9 /* Pods-WinDaily-WinDailyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -609,7 +609,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2962AF2DDF196682563BB5E1 /* Pods-WinDaily.debug.xcconfig */;
+			baseConfigurationReference = 296737379BE35164659F74DA /* Pods-WinDaily.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -626,17 +626,18 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hakeem.WinDaily;
+				PRODUCT_BUNDLE_IDENTIFIER = "win-daily---com.hakeem.WinDaily";
 				PRODUCT_NAME = WinDaily;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8A7FA6A49D7D8E22C908A38 /* Pods-WinDaily.release.xcconfig */;
+			baseConfigurationReference = 6821A637A72AB75B5E234C3C /* Pods-WinDaily.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -652,9 +653,10 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hakeem.WinDaily;
+				PRODUCT_BUNDLE_IDENTIFIER = "win-daily---com.hakeem.WinDaily";
 				PRODUCT_NAME = WinDaily;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
