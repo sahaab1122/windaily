@@ -2,6 +2,7 @@ import api from '../../api/api';
 import { login, updateuser, update_user, } from '../actions/authActions'
 // import { set_loading,  } from '../actions/globalActions' 
 import path from '../../api/path';
+import { set_tier } from '../actions/appAction';
 
 export const _login = (param) => {
 
@@ -17,7 +18,10 @@ export const _login = (param) => {
         // console.log(response)
 
         if (response.success == true) {
-           
+            if(response.result?.subscription){
+                dispatch(set_tier(true))
+            }
+
             dispatch(login(response.result))
 
         }
@@ -39,10 +43,16 @@ export const _updateuser = (param, _id) => {
 
     return async (dispatch, getState) => {
 
-      console.log(_id)
-        let response = await api(path.update +   _id, "PATCH", param);
+        console.log(_id)
+        let response = await api(path.update + _id, "PATCH", param);
         console.log(response)
-        // dispatch(set_loading(false));
+        if (response?.success) {
+
+            dispatch(set_tier(true));
+            return true
+        }
+
+        return false
         // if (response.success == true) {
 
         //     dispatch(updateuser(response.result))
@@ -57,8 +67,8 @@ export const _deleteitem = (param, _id) => {
 
     return async (mapDispatch, getState) => {
 
-      console.log(_id)
-        let response = await api(path.delte +   _id, "DELETE", param);
+        console.log(_id)
+        let response = await api(path.delte + _id, "DELETE", param);
         console.log(response)
         // dispatch(set_loading(false));
         // if (response.success == true) {

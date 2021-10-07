@@ -43,14 +43,10 @@ class Home extends React.Component {
     }
 
     async componentDidMount() {
-        if (this.props.tier === false) {
+        if (!this.props.tier) {
             this.setState({ modalVisible: true })
 
-        }
-        else {
-            this.setState({ modalVisible: false })
-        }
-
+        } 
         let res = await this.props._getPrizes()
         console.log(this.props.prizes)
 

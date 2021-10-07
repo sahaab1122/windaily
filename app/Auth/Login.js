@@ -69,8 +69,12 @@ class Login extends React.Component {
 
 
 
-
     render() {
+        // const subscription = {
+        //     subscriptionType:'Free',
+        //     required: false,
+        //     bought_data: new Date()
+        // }
         return (
 
             <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%", minHeight: Dimensions.get('window').height,paddingTop:getStatusBarHeight() }}>

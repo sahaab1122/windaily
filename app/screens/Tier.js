@@ -7,6 +7,7 @@ import path from '../api/path';
 import api from '../api/api';
 import { set_tier } from '../store/actions/appAction';
 import * as RNIap from 'react-native-iap';
+import { _updateuser } from '../store/middlewares/authMiddleware';
 
 
 // import api from '../api/api';
@@ -103,14 +104,15 @@ class Tier extends React.Component {
 
     selectedValue = async () => {
         let type = {
-            "user": this.props.user._id,
-            selectedValue: this.state.selectedValue
+            "user": this.props.user._id, 
+            subscription:Platform.OS==="android"?"Free": this.state.selectedValue, 
         }
-        let res = await api(path.tier, "post", type)
-        if (res.success === true) {
-            this.props.set_tier(true)
+        
+        let res = await this.props._updateuser(type, this.props.user._id)
+        
+        if(res ){
+           this.props.hideModal() 
         }
-
 
 
     }
@@ -136,10 +138,10 @@ class Tier extends React.Component {
                         <Text style={{ alignItems: 'center', fontFamily: "Poppins-Regular", alignSelf: 'flex-end', justifyContent: 'center', alignSelf: 'center', marginTop: 10, height: 43, fontSize: 30, color: "#fff", textDecorationLine: "underline" }} >
                             TIER SELECTION
                         </Text>
-                        <TouchableOpacity style={styles.text1} onPress={() => this.props.hideModal()} >
+                        <TouchableOpacity style={styles.text1} onPress={() => this.selectedValue()} >
                             <Text style={{ color: '#000', fontSize: 20, fontFamily: "Poppins-Regular" }}>FREE</Text>
                         </TouchableOpacity>
-                        {this.state.tiers?.map((item, index) =>
+                        {items?.map((item, index) =>
                         (<TouchableOpacity onPress={() => this.setState({ selectedValue: item.title }, () => this.buyEvent(item))} style={styles.text1} >
                             <Text style={{ color: '#000', fontSize: 20, fontFamily: "Poppins-Regular" }}>{item.title}</Text>
                         </TouchableOpacity>)
@@ -219,9 +221,9 @@ const mapDispatch = dispatch => {
     return {
 
         //   _getPrizes: () => dispatch(_getPrizes()),
-        set_tier: tiers => dispatch({ type: "set_tier", payload: tiers })
+        set_tier: tiers => dispatch({ type: "set_tier", payload: tiers }),
         // setLoading: (bol) => dispatch(set_loading(bol)),
-
+        _updateuser: (param, _id) => dispatch(_updateuser(param, _id)),
 
     }
 }
