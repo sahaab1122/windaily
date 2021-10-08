@@ -38,7 +38,7 @@ class MoreTicket extends React.Component {
             <LinearGradient colors={['#04a4df',  '#fff']} style={{ backgroundColor: "#04a4df", width: "100%", height: "100%", justifyContent: "space-evenly" }}>
              <TouchableOpacity style={{width:"95%",height:100,backgroundColor:"#fff",justifyContent:"center",flexDirection:"row",borderRadius:10,alignSelf:'center'}}>
              <FontAwsome name="instagram" size={30} color={"#04a4df"} style={{alignSelf:"center"}}/>
-                 <Text style={{color:"#04a4df",paddingHorizontal:20,fontSize:15,textAlignVertical:"center",fontFamily: "Poppins-Regular" }}>
+                 <Text style={{color:"#04a4df",paddingHorizontal:20,fontSize:15,textAlignVertical:"center",fontFamily: "Poppins-Regular",alignSelf:'center' }}>
                      Follow us on Instagram to earn 2 extra tickets
                  </Text>
                  

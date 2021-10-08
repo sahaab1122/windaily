@@ -17,7 +17,7 @@ import Entypo from 'react-native-vector-icons/Entypo'
 import { color } from 'react-native-reanimated';
 
 import Carousel from 'react-native-looped-carousel'
-import { widthPercentageToDP } from 'react-native-responsive-screen';
+import { heightPercentageToDP, widthPercentageToDP } from 'react-native-responsive-screen';
 import { connect } from 'react-redux';
 import Tier from './Tier';
 import { _getPrizes } from '../store/middlewares/appMiddleware';
@@ -46,7 +46,7 @@ class Home extends React.Component {
         if (!this.props.tier) {
             this.setState({ modalVisible: true })
 
-        } 
+        }
         let res = await this.props._getPrizes()
         console.log(this.props.prizes)
 
@@ -63,42 +63,35 @@ class Home extends React.Component {
 
         return (
 
-            <Wrapper navigation={navigation} onLayout={this._onLayoutDidChange} >
-                <View style={{ position: "absolute", alignSelf: "center", justifyContent: "center", paddingVertical: 9 }}>
+            <Wrapper navigation={navigation} onLayout={this._onLayoutDidChange} showBalance >
 
-                    <Text style={{ color: "#fff", fontSize: 15, fontWeight: 'bold', fontFamily: "Poppins-Regular" }}>
-                        Balance
-                    </Text>
-                    <Text style={{ alignSelf: "center", color: "#fff", fontWeight: "bold", fontFamily: "Poppins-Regular" }}>
-                        0$
-                    </Text>
-                </View>
+                <View style={{ flex: 1, justifyContent: "space-evenly" }}>
 
-                <Carousel
-                    delay={5000}
-                    style={{ width: "90%", height: 200, alignSelf: "center" }}
-                    autoplay
-                    pageInfo
+                    <Carousel
+                        delay={5000}
+                        style={{ width: "90%", height: 200, alignSelf: "center" }}
+                        autoplay
+                        pageInfo
 
-                >
-                    {/* {
+                    >
+                        {/* {
                             this.props.items.map((item, index) =>
                                 <Card navigation={this.props.navigation} item={item} key={index} />
 
                             )
                         } */}
-                    {this.props.prizes.length < 1 ?
-                        <Image source={require("../Assets/amazon15.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image>
-                        :
-                        this.props.prizes.map((prize, index) =>
-                            <Image source={{ uri: prize.image[0] }} key={index} style={{ height: 200, width: widthPercentageToDP(90) }}></Image>
-                        )}
-                    {/* <Image source={require("../Assets/amazon25.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
-                    {/* <Image source={require("../Assets/amazon50.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
-                    {/* <Image source={require("../Assets/amazon100.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
-                    {/* <View style={{ backgroundColor: '#04a4df',width:widthPercentageToDP(90)  } }><Text>3</Text></View> */}
-                </Carousel>
-                <View style={{ flex: 1, justifyContent: "space-evenly" }}>
+                        {this.props.prizes.length < 1 ?
+                            <Image source={require("../Assets/amazon15.png")} style={{ width: heightPercentageToDP(30), width: widthPercentageToDP(90), resizeMode: "stretch" }}></Image>
+                            :
+                            this.props.prizes.map((prize, index) =>
+                                <Image source={{ uri: prize.image[0] }} key={index} style={{ width: heightPercentageToDP(30), width: widthPercentageToDP(90), resizeMode: "stretch" }}></Image>
+                            )}
+                        {/* <Image source={require("../Assets/amazon25.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
+                        {/* <Image source={require("../Assets/amazon50.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
+                        {/* <Image source={require("../Assets/amazon100.png")} style={{ height: 200, width: widthPercentageToDP(90) }}></Image> */}
+                        {/* <View style={{ backgroundColor: '#04a4df',width:widthPercentageToDP(90)  } }><Text>3</Text></View> */}
+                    </Carousel>
+
 
                     {/* <Text style={{ justifyContent: "center", fontSize: 26, alignSelf: "center", color: "#fff" }}>
                         Draw 678

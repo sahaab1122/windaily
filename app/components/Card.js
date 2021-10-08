@@ -12,7 +12,7 @@ export default ({ winner, navigation, style }) => {
 
            
             {/* <Image style={{ width: "100%", height: 92, resizeMode: 'contain', backgroundColor: '#F5F8FA'}} source={require('../Assets/dumy.png')} /> */}
-            <EvilIcons name="user" size={92}  />
+            <EvilIcons name="user" size={92} style={{alignSelf:"center"}} />
             {/* <Image style={{ width: "100%", height: 92, resizeMode: 'contain', backgroundColor: '#F5F8FA'}} source={require('../Assets/dumy.png')} /> */}
             <View style={styles.secview}>
                 <View style={styles.thrdview}>

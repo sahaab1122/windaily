@@ -22,8 +22,8 @@ class Login extends React.Component {
         super();
         this.state = {
 
-            email: '',
-            password: '',
+            email: 'sahaabsabir6@gmail.com',
+            password: '123',
             loading: false
         }
     }
@@ -175,10 +175,8 @@ const styles = StyleSheet.create({
         backgroundColor: '#F5F8FA',
         borderColor: '#97aabd',
         borderWidth: 1,
-        paddingLeft: 10,
+        paddingLeft:10,
         fontSize: 15,
-
-         
         marginTop: 10,
         color: "#97AABD",
         alignSelf: 'center',

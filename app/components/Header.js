@@ -7,12 +7,12 @@ export default (props) => {
 
 
 
-      <View style={{width:"100%",height:55,backgroundColor:'#04a4df',justifyContent:"center",shadowOpacity: 0,
+      <View style={{width:"100%",height:90,backgroundColor:'#04a4df',justifyContent:"center",shadowOpacity: 0,
       shadowRadius: 4.65,}}>
          <TouchableOpacity onPress={()=> this.props.naviagtion.goBack()} style={{paddingLeft:20}}>
              
 
-           <Ionicons name="arrow-back-sharp" size={30} color="white" />
+           <Ionicons name="arrow-back-sharp" size={25} color="white" />
          </TouchableOpacity>
            
            
