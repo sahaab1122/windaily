@@ -92,16 +92,14 @@ class Login extends React.Component {
 
                     <View style={{ width: '100%', height: "80%" }} >
 
-                        {/* <Inputfield text="Email" keyboardType="email-address" /> */}
-                        <Text style={{ color: "white", paddingLeft: 35, fontSize: 20, flexGrow: 0, fontFamily: "Poppins-Regular" }}>
+                         <Text style={{ color: "white", paddingLeft: 35, fontSize: 20, flexGrow: 0, fontFamily: "Poppins-Regular" }}>
                             Email
                         </Text>
                         <TextInput keyboardType={'email-address'} style={styles.inputfield} color="#000" placeholder="andy@gmail.com" placeholderTextColor="#888"
                             onChangeText={(email) => { this.setState({ email }) }}
                         />
 
-                        {/* <Inputfield text="Password" /> */}
-                        <Text style={{ color: "white", paddingHorizontal: 35, fontSize: 20, paddingTop: 10,fontFamily: "Poppins-Regular"  }}>
+                       <Text style={{ color: "white", paddingHorizontal: 35, fontSize: 20, paddingTop: 10,fontFamily: "Poppins-Regular"  }}>
                             Password
                         </Text>
                         <TextInput style={styles.inputfield} placeholder="******" color="#000" secureTextEntry={true} placeholderTextColor="#888"
