@@ -19,7 +19,7 @@ class Wrapper extends Component {
 
                 <LinearGradient colors={['#04a4df', '#fff']} style={{ flex: 1, width: "100%", paddingTop: getStatusBarHeight() + 20 }}>
 
-                    <View style={{ position: "absolute", width: "100%", paddingHorizontal: 20, flexDirection: "row", justifyContent: "space-between", paddingTop: getStatusBarHeight() + 20, }}>
+                    <View style={{ position: "absolute", zIndex: 100, width: "100%", paddingHorizontal: 20, flexDirection: "row", justifyContent: "space-between", paddingTop: getStatusBarHeight() + 20, }}>
 
                         <Text style={{ color: "#fff", fontSize: 15, fontWeight: 'bold', fontFamily: "Poppins-Regular" }}>
                             Balance 0$

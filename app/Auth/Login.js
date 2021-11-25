@@ -27,6 +27,9 @@ class Login extends React.Component {
             loading: false
         }
     }
+componentDidMount = () => {
+  alert("hy")
+};
 
 
 
@@ -86,7 +89,7 @@ class Login extends React.Component {
                 <Image source={require('../Assets/windaily.png')} style={{ width: "80%", height: "20%", alignSelf: "center", resizeMode: "contain", marginVertical: 20 }} />
 
 
-                <ScrollView contentContainerStyle={{ minHeight: Dimensions.get('window').height, justifyContent: 'space-evenly' }} showsVerticalScrollIndicator={false} >
+                <ScrollView scrollEnabled={false}   showsVerticalScrollIndicator={false} >
 
                     {/* <Middle /> */}
 
