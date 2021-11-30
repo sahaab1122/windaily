@@ -22,14 +22,14 @@ class Login extends React.Component {
         super();
         this.state = {
 
-            email: 'sahaabsabir6@gmail.com',
-            password: '123',
+            email: '',
+            password: '',
             loading: false
         }
     }
-componentDidMount = () => {
-  alert("hy")
-};
+// componentDidMount = () => {
+//   alert("hy")
+// };
 
 
 

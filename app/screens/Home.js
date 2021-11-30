@@ -108,11 +108,11 @@ class Home extends React.Component {
                     </Text>
 
 
-                    <TouchableOpacity onPress={() => this.props.navigation.navigate('MoreTicket')} style={{ alignSelf: "center", width: "40%", height: 30, borderColor: "#04a4df", borderWidth: 2, borderRadius: 10, justifyContent: "center", alignItems: "center" }}>
+                    {/* <TouchableOpacity onPress={() => this.props.navigation.navigate('MoreTicket')} style={{ alignSelf: "center", width: "40%", height: 30, borderColor: "#04a4df", borderWidth: 2, borderRadius: 10, justifyContent: "center", alignItems: "center" }}>
                         <Text style={{ alignSelf: 'flex-end', fontFamily: "Poppins-Regular", textAlignVertical: "center", alignSelf: "center", color: '#04a4df' }}>
                             Get more tickets
                         </Text>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
 
                 </View>
                 {

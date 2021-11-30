@@ -16,24 +16,25 @@ import Entypo from 'react-native-vector-icons/Entypo'
 import { Carousal } from '../components/Carousel';
 import LinearGradient from 'react-native-linear-gradient';
 import { Linking } from 'react-native';
+import { connect } from 'react-redux';
 
 
 
 class Setting extends React.Component {
     
     
-
     
-
-
-
-
-
-     
- 
-
- 
+    
+    
+    
+    
+    
+    
+    
+    
+    
     render() {
+        console.log(this.props.user)
         return (
 
      <LinearGradient colors={['#04a4df',  '#fff']} style={{backgroundColor:"#04a4df",width:"100%",height:"100%",justifyContent:"space-evenly"}}>
@@ -65,7 +66,7 @@ class Setting extends React.Component {
             </Text>
          </TouchableOpacity>
          <Text style={{alignSelf:"center",justifyContent:"center",color:"#fff",fontFamily: "Poppins-Regular" }}>
-             Your Referral Id: sahab
+             {/* Your Referral Id: {this.state.user.name} */}
          </Text>
          <TouchableOpacity style={styles.text}>
             <Text style={{color:"white",fontFamily: "Poppins-Regular" }}>
@@ -111,6 +112,20 @@ const styles = StyleSheet.create({
 });
 
 
+// const mapState = state => {
+//     return {
+//         // logged: state.authReducer.logged,
+//         user: state.authReducer.user,
 
-export default  Setting
+//     }
+// }
+// const mapDispatch = dispatch =>{
+//     return{
+//         // logout:() => dispatch(logout()),
+//         // setLoading: (bol) => dispatch(_setLoading(bol)),
+
+
+//     }
+// }
+export default Setting
 

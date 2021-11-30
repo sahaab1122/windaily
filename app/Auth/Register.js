@@ -3,6 +3,7 @@ import React from 'react';
 
 import { ImageBackground, uri, StyleSheet, TextInput, View, TouchableOpacity, Text, Image, SafeAreaView, KeyboardAvoidingView, Dimensions, Platform, ScrollView, ActivityIndicator } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
+import { getStatusBarHeight } from 'react-native-status-bar-height';
 import { connect } from 'react-redux';
 import api from '../api/api';
 import path from '../api/path';
@@ -111,9 +112,9 @@ class Register extends React.Component {
     render() {
         return (
 
-            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%", minHeight: Dimensions.get('window').height }}>
+            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%", minHeight: Dimensions.get('window').height,paddingTop:getStatusBarHeight() }}>
 
-                <Image source={require('../Assets/windaily.png')} style={{ width: "80%", height: "20%", alignSelf: "center", marginVertical: 20 }} />
+                <Image source={require('../Assets/windaily.png')} style={{ width: "80%", height: "20%", alignSelf: "center", marginVertical: 20,resizeMode:"contain" }} />
 
 
                 <ScrollView   contentContainerStyle={{ minHeight: Dimensions.get('window').height, justifyContent: 'space-evenly' }} showsVerticalScrollIndicator={false} >
