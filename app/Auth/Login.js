@@ -27,9 +27,7 @@ class Login extends React.Component {
             loading: false
         }
     }
-// componentDidMount = () => {
-//   alert("hy")
-// };
+ 
 
 
 
