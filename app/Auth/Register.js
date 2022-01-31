@@ -99,31 +99,31 @@ class Register extends React.Component {
             }
             // let res = await api.registerUser(user)
             // if (res) {
-                //     await this.props._login(this.state.email, this.state.password)
-                //     window.location.replace("/")
-                
-                
-                // }
-                
-            }
+            //     await this.props._login(this.state.email, this.state.password)
+            //     window.location.replace("/")
+
+
+            // }
+
         }
+    }
 
 
     render() {
         return (
 
-            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%", minHeight: Dimensions.get('window').height,paddingTop:getStatusBarHeight() }}>
+            <LinearGradient colors={['#04a4df', '#fff']} style={{ width: "100%", height: "100%", minHeight: Dimensions.get('window').height, paddingTop: getStatusBarHeight() }}>
 
-                <Image source={require('../Assets/windaily.png')} style={{ width: "80%", height: "20%", alignSelf: "center", marginVertical: 20,resizeMode:"contain" }} />
+                <Image source={require('../Assets/windaily.png')} style={{ width: "80%", height: "20%", alignSelf: "center", marginVertical: 20, resizeMode: "contain" }} />
 
 
-                <ScrollView   contentContainerStyle={{ minHeight: Dimensions.get('window').height, justifyContent: 'space-evenly' }} showsVerticalScrollIndicator={false} >
+                <ScrollView contentContainerStyle={{ minHeight: Dimensions.get('window').height, justifyContent: 'space-evenly' }} showsVerticalScrollIndicator={false} >
 
                     <View style={{ width: '100%', height: "90%" }} >
                         {/* <TouchableWithoutFeedback onPress={keyboard.dismiss}/> */}
                         {/* <Inputfield text="First Name" /> */}
                         <TextInput style={styles.inputfield} placeholder="Name" placeholderTextColor="grey" color="#000"
-                            onChangeText={(name) => { this.setState({ name }) }}
+                            autoCapitalize='words' onChangeText={(name) => { this.setState({ name }) }}
                         />
 
                         {/* <Inputfield  text="Phone or Mail" /> */}
@@ -132,7 +132,7 @@ class Register extends React.Component {
                         />
                         {/* <Inputfield text="Email" keyboardType="email-address" /> */}
                         <TextInput keyboardType={'email-address'} style={styles.inputfield} placeholder="Email" color="#000" placeholderTextColor="grey"
-                            onChangeText={(email) => { this.setState({ email }) }}
+                            autoCapitalize='none' onChangeText={(email) => { this.setState({ email }) }}
                         />
 
 
