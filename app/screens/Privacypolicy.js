@@ -22,17 +22,6 @@ import LinearGradient from 'react-native-linear-gradient';
 class Privacypolicy extends React.Component {
 
 
-
-
-
-
-
-
-
-
-
-
-
     render() {
         return (
 
@@ -40,9 +29,9 @@ class Privacypolicy extends React.Component {
                 <ScrollView showsVerticalScrollIndicator={false} style={{ paddingHorizontal: 20 }}>
                     {/* <Text style={{textAlign:"center",fontSize:35,fontWeight:"bold",}}>Privacy & Policy</Text> */}
 
-                    <Text style={{ fontSize: 20,textAlign:"left",paddingVertical:30 }}>
-                        <Text style={{fontWeight:"bold"}}>
-                        Privacy Policy
+                    <Text style={{ fontSize: 20, textAlign: "left", paddingVertical: 30 }}>
+                        <Text style={{ fontWeight: "bold" }}>
+                            Privacy Policy
 
                         </Text>{"\n"}
                         Last updated: September 17, 2021{"\n"}
@@ -52,20 +41,20 @@ class Privacypolicy extends React.Component {
                         We use your Personal data to provide and improve the Service. By using the Win Daily
                         app, you agree to the collection and use of information in accordance with this Privacy
                         Policy.{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Interpretation and Definitions
-                            </Text>{"\n"}
-                            <Text style={{fontWeight:"bold"}}>
-                        
-                        Interpretation
-                            </Text>{"\n"}
+                        <Text style={{ fontWeight: "bold" }}>
+                            Interpretation and Definitions
+                        </Text>{"\n"}
+                        <Text style={{ fontWeight: "bold" }}>
+
+                            Interpretation
+                        </Text>{"\n"}
                         The words of which the initial letter is capitalized have meanings defined under the
                         following conditions. The following definitions shall have the same meaning regardless
                         of whether they appear in singular or in plural.{"\n"}
-                        
-                        <Text style={{fontWeight:"bold"}}>
-                         Definitions
-                            </Text>{"\n"}
+
+                        <Text style={{ fontWeight: "bold" }}>
+                            Definitions
+                        </Text>{"\n"}
                         For the purposes of this Privacy Policy:{"\n"}
                         • Account means a unique account created for You to access our Service or
                         parts of our Service.{"\n"}
@@ -97,17 +86,17 @@ class Privacypolicy extends React.Component {
                         • You means the individual accessing or using the Service, or the company, or
                         other legal entity on behalf of which such individual is accessing or using the
                         Service, as applicable.{"\n"}
-                        
-                        <Text style={{fontWeight:"bold"}}>
-                        
-                        Collecting and Using Your Personal Data 
+
+                        <Text style={{ fontWeight: "bold" }}>
+
+                            Collecting and Using Your Personal Data
                         </Text>{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Types of Data Collected
+                        <Text style={{ fontWeight: "bold" }}>
+                            Types of Data Collected
                         </Text>{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Personal Data
-                            </Text>{"\n"}
+                        <Text style={{ fontWeight: "bold" }}>
+                            Personal Data
+                        </Text>{"\n"}
                         While using Our Service, we may ask You to provide Us with certain personally
                         identifiable information that can be used to contact or identify You. Personally
                         identifiable information may include, but is not limited to:{"\n"}
@@ -116,8 +105,8 @@ class Privacypolicy extends React.Component {
                         • Address, State, Province, ZIP/Postal code, City{"\n"}
                         • Usage Data{"\n"}
                         • Payment information{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Usage Data{"\n"}
+                        <Text style={{ fontWeight: "bold" }}>
+                            Usage Data{"\n"}
                         </Text>
                         Usage Data is collected automatically when using the Service.{"\n"}
                         Usage Data may include information such as your Device's Internet Protocol address
@@ -131,8 +120,8 @@ class Privacypolicy extends React.Component {
                         and other diagnostic data.{"\n"}
                         We may also collect information that your browser sends whenever you visit our Service
                         or when you access the Service by or through a mobile device.{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Information from Third-Party Social Media Services{"\n"}
+                        <Text style={{ fontWeight: "bold" }}>
+                            Information from Third-Party Social Media Services{"\n"}
                         </Text>
                         The Company allows you to create an account and log in to use the Service through the
                         following Third-party Social Media Services:{"\n"}
@@ -147,8 +136,8 @@ class Privacypolicy extends React.Component {
                         information and Personal Data, during registration or otherwise, you are giving the
                         Company permission to use, share, and store it in a manner consistent with this Privacy
                         Policy.{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Information Collected while Using the Application
+                        <Text style={{ fontWeight: "bold" }}>
+                            Information Collected while Using the Application
                         </Text>
                         {"\n"}
                         While using our application, in order to provide features of Our Application, we may
@@ -161,8 +150,8 @@ class Privacypolicy extends React.Component {
                         Service Provider's server or it may be simply stored on Your device.{"\n"}
                         You can enable or disable access to this information at any time, through Your Device
                         settings.{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Use of Your Personal Data
+                        <Text style={{ fontWeight: "bold" }}>
+                            Use of Your Personal Data
                         </Text>
                         {"\n"}
                         The Company may use Personal Data for the following purposes:{"\n"}
@@ -219,8 +208,8 @@ class Privacypolicy extends React.Component {
                         profile.{"\n"}
                         • With Your consent: We may disclose Your personal information for any
                         other purpose with Your consent.{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Retention of Your Personal Data
+                        <Text style={{ fontWeight: "bold" }}>
+                            Retention of Your Personal Data
                         </Text>
                         {"\n"}
                         The Company will retain Your Personal Data only for as long as is necessary for the
@@ -244,26 +233,26 @@ class Privacypolicy extends React.Component {
                         treated securely and in accordance with this Privacy Policy and no transfer of Your
                         Personal Data will take place to an organization or a country unless there are adequate
                         controls in place including the security of Your data and other personal information.{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Disclosure of Your Personal Data
+                        <Text style={{ fontWeight: "bold" }}>
+                            Disclosure of Your Personal Data
                         </Text>
                         {"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Business Transactions
+                        <Text style={{ fontWeight: "bold" }}>
+                            Business Transactions
                         </Text>
                         {"\n"}
                         If the Company is involved in a merger, acquisition or asset sale, Your Personal Data
                         may be transferred. We will provide notice before Your Personal Data is transferred and
                         becomes subject to a different Privacy Policy.{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Law enforcement
+                        <Text style={{ fontWeight: "bold" }}>
+                            Law enforcement
                         </Text>
                         {"\n"}
                         Under certain circumstances, the Company may be required to disclose Your Personal
                         Data if required to do so by law or in response to valid requests by public authorities
                         (e.g., a court or a government agency).{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Other legal requirements
+                        <Text style={{ fontWeight: "bold" }}>
+                            Other legal requirements
                         </Text>
                         {"\n"}
                         The Company may disclose Your Personal Data in the good faith belief that such action
@@ -273,16 +262,16 @@ class Privacypolicy extends React.Component {
                         • Prevent or investigate possible wrongdoing in connection with the Service{"\n"}
                         • Protect the personal safety of Users of the Service or the public{"\n"}
                         • Protect against legal liability{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Security of Your Personal Data
+                        <Text style={{ fontWeight: "bold" }}>
+                            Security of Your Personal Data
                         </Text>
                         {"\n"}
                         The security of Your Personal Data is important to Us but remember that no method of
                         transmission over the Internet, or method of electronic storage is 100% secure. While
                         We strive to use commercially acceptable means to protect Your Personal Data, we
                         cannot guarantee its absolute security.{"\n"}
-                        <Text style={{fontWeight:"bold",fontSize:25}}>
-                        Children's Privacy
+                        <Text style={{ fontWeight: "bold", fontSize: 25 }}>
+                            Children's Privacy
                         </Text>
                         {"\n"}
                         Our Service does not address anyone under the age of 13. We do not knowingly collect
@@ -294,8 +283,8 @@ class Privacypolicy extends React.Component {
                         If We need to rely on consent as a legal basis for processing Your information and Your
                         country requires consent from a parent, we may require Your parent's consent before
                         We collect and use that information.{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Links to Other Websites
+                        <Text style={{ fontWeight: "bold" }}>
+                            Links to Other Websites
                         </Text>
                         {"\n"}
                         Our Service may contain links to other websites that are not operated by Us. If You click
@@ -303,8 +292,8 @@ class Privacypolicy extends React.Component {
                         to review the Privacy Policy of every site You visit.{"\n"}
                         We have no control over and assume no responsibility for the content, privacy policies
                         or practices of any third-party sites or services.{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
-                        Changes to this Privacy Policy
+                        <Text style={{ fontWeight: "bold" }}>
+                            Changes to this Privacy Policy
                         </Text>
                         {"\n"}
                         We may update Our Privacy Policy from time to time. We will notify You of any changes
@@ -314,9 +303,9 @@ class Privacypolicy extends React.Component {
                         Policy.{"\n"}
                         You are advised to review this Privacy Policy periodically for any changes. Changes to
                         this Privacy Policy are effective when they are posted on this page.{"\n"}
-                        <Text style={{fontWeight:"bold"}}>
+                        <Text style={{ fontWeight: "bold" }}>
 
-                        Contact Us
+                            Contact Us
                         </Text>
                         {"\n"}
                         If you have any questions about this Privacy Policy, you can contact us:{"\n"}

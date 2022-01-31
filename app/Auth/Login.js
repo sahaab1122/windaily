@@ -97,7 +97,7 @@ class Login extends React.Component {
                             Email
                         </Text>
                         <TextInput keyboardType={'email-address'} style={styles.inputfield} color="#000" placeholder="andy@gmail.com" placeholderTextColor="#888"
-                            onChangeText={(email) => { this.setState({ email }) }}
+                         autoCapitalize='none'   onChangeText={(email) => { this.setState({ email }) }}
                         />
 
                        <Text style={{ color: "white", paddingHorizontal: 35, fontSize: 20, paddingTop: 10,fontFamily: "Poppins-Regular"  }}>
